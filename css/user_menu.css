@@ -1,20 +1,7 @@
-body {
-    background:#f0f0f0;
-}
-.nav {
-    right:5%;
-    /*margin-left:-150px;*/
-    /*top:10px;*/
-    position:absolute;
-}
-/*.nav>li>a:hover, .nav>li>a:focus, .nav .open>a, .nav .open>a:hover, .nav .open>a:focus {
-    background:#fff;
-}*/
 .dropdown {
-    /*background:#fff;*/
-    border:1px solid #ccc;
+    background:#fff;
     border-radius:4px;
-    width:300px;    
+    width: 100px;
 }
 
 .dropdown-menu>li>a {
@@ -24,8 +11,7 @@ body {
 .dropdown ul.dropdown-menu {
 	border-radius: 4px;
 	box-shadow: none;
-	margin-top: 20px;
-	width: 300px;
+	margin-top: 15px;
 }
 
 .dropdown ul.dropdown-menu:before {
