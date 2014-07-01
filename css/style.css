@@ -3,10 +3,6 @@
     padding: 0;
 }
 
-body {
-    background: #F0F0F0;
-}
-
 footer {
     padding-top: 20px;
     border-top: 1px solid #CCC;
@@ -29,14 +25,67 @@ footer {
     width: 100%;
 }
 
-.container {
+.container-2 {
     width: auto;
+}
+
+@media (min-width: 768px) {
+  .form-horizontal .control-label {
+    text-align: left !important;
+  }
+}
+
+/* Form Sign */
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+  float: right;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+  font-weight: normal;
+}
+
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+
+.form-signin input[type="login"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-signin fieldset {
+  border: solid 1px #000;
 }
 
 /* Sidebar Menu */
 @media (min-width: 768px) {
   .affix-content .container {
-    width: 700px;
+    width: auto;
   }
 
   .affix-content .container .page-header {
@@ -54,10 +103,6 @@ footer {
     overflow: scroll;
     margin-left: 0;
     margin-right: 0;
-  }
-
-  .affix-content {
-    background-color: white;
   }
 
   .sidebar-nav .navbar .navbar-collapse {
@@ -89,7 +134,7 @@ footer {
 
 @media (min-width: 769px) {
   .affix-content .container {
-    width: 600px;
+    width: auto;
   }
 
   .affix-content .container .page-header {
@@ -99,7 +144,7 @@ footer {
 
 @media (min-width: 992px) {
   .affix-content .container {
-    width: 900px;
+    width: auto;
   }
 
   .affix-content .container .page-header {
@@ -117,7 +162,7 @@ footer {
   }
 
   .affix-content .container {
-    width: 1000px;
+    width: auto;
   }
 
   .affix-content .container .page-header {
@@ -125,8 +170,8 @@ footer {
   }
 
   .affix-content {
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 0;
+    padding-left: 0;
   }
 
   .affix-title {
@@ -152,156 +197,40 @@ footer {
   }
 }
 
-.top {
-    width: 100%;
-    height: 69px;
-    background-color: #FF8C00;
-    text-align: center;
-    border: 0;
-    padding-top: 20px;
+/* User Menu */
+.dropdown {
+    border-radius:4px;
+    width: 100px;
 }
 
-.sad { 
-    width: 980px; 
-    margin: 0 auto
-}
-.sad .header { 
-    padding: 10px 0 
-}
-.sad .content { 
-    padding: 10px 0 
-}
-.sad .content.sony { 
-    padding: 50px 0 10px 
-}
-.sad .column { 
-    float: right 
-}
-.sad .column1 { 
-    width: 680px 
-}
-.sad .column2 { 
-    width: 300px;
-}
-.sad .sony .column2 {
-    margin-top: 65px;
-}
-.sad .login { 
-    padding: 20px; 
-    background-color: #FAFAFA; 
-    border: 1px solid #D9D9D9;
-}
-.sad h3 { 
-    font-size: 18px; 
-    color: #000; 
-}
-.sad .label { 
-        display: block; 
-        font-size: 13px; 
-        font-weight: bold; 
-        margin: 20px 0 5px 
-}
-.sad .text { width: 240px; 
-       font-size: 13px; 
-       background-color: #FFF; 
-       padding: 8px; 
-       border: 1px solid #D9D9D9; 
-       border-radius: 4px; 
-       -moz-border-radius: 4px; 
-       -webkit-border-radius: 4px 
+.dropdown-menu>li>a {
+  color: #428bca;
 }
 
-.sad .button {
-    margin: 20px 0 0;
-    padding: 8px 10px;
-    font-size: 13px;
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 3px;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    cursor: pointer;
-    border-color: #3185CA;
-    color: #FFF;
-    background-color: #006dcc;
-    background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
-    background-image: -ms-linear-gradient(top, #0088cc, #0044cc);
-    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
-    background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
-    background-image: -o-linear-gradient(top, #0088cc, #0044cc);
-    background-image: linear-gradient(top, #0088cc, #0044cc);
-    background-repeat: repeat-x;
-    border-color: #0044cc #0044cc #002a80;
-    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-}
-.sad .button:hover {
-    background-color: #0044cc;
-    background-image: -moz-linear-gradient(center top, #3185CA, #0044CC);
-    background-image: linear-gradient(center top, #3185CA, #0044CC);
+.dropdown ul.dropdown-menu {
+  border-radius: 4px;
+  box-shadow: none;
+  margin-top: 15px;
 }
 
-.sad .button:active {
-    background-color: #003399 \9;	
+.dropdown ul.dropdown-menu:before {
+  content: "";
+  border-bottom: 10px solid #FFF;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  position: absolute;
+  top: -10px;
+  right: 16px;
+  z-index: 10px;
 }
 
-.sad p { 
-    margin: 10px 0; 
-    font-size: 13px 
-}
-
-.sad .checkbox { 
-    margin-left: 10px 
-}
-.sad .persist { 
-    font-size: 13px 
-}
-.sad .link { 
-    font-size: 13px; 
-    color: #000; 
-    text-decoration: underline; 
-    cursor: pointer; 
-    display: block; 
-    margin: 10px 0 0 
-}
-.sad .link:hover { 
-    text-decoration: none 
-}
-
-.sad .footer { margin: 30px 0 0; 
-         padding: 10px 0; 
-         border-top: 1px solid #D9D9D9 
-}
-.sad .languages { 
-    float: left 
-}
-.sad .logo_totvs { 
-    float: right 
-}
-.sad .language { 
-    cursor: pointer 
-}
-.sad .disclaimer { 
-    font-size: 11px; 
-    text-align: center; 
-    float: left; 
-    width: 825px 
-}
-.sad .footer_link { 
-    text-decoration: underline; 
-    cursor: pointer 
-}
-.sad .footer_link:hover { 
-    text-decoration: none 
-}
-.sad .sony_logo { 
-    width: 660px !important; 
-}
-
-.sad_errors { 
-    font-size: 12px; 
-    color: #F00; 
-    background-color: #FED; 
-    padding: 20px; 
-    border: 1px solid #F00; 
-    margin-bottom: 10px 
+.dropdown ul.dropdown-menu:after {
+  content: "";
+  border-bottom: 12px solid #CCC;
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  position: absolute;
+  top: -12px;
+  right: 14px;
+  z-index: 9px;
 }
