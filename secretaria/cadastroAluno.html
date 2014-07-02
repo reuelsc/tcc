@@ -88,13 +88,109 @@
 						</div>
 
 						<form class="form-horizontal" role="form">
-							<form class="form-group">
-								<label for="inputName" class="col-md-2">Nome:</label>
-								<div class="col-xs-12 col-md-10">
-									<input type="name" class="form-control" id="inputName">
+							<div class="form-group">
+								<label for="inputName" class="col-sm-2 control-label">Nome:</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="inputName" required>
 								</div>
-							</form>
+							</div>
+							
+							<div class="form-group">
+								<label for="inputMat" class="col-sm-2 control-label">Matrícula:</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="inputMat" required>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="selectCurso" class="col-sm-2 control-label">Curso:</label>
+								<div class="col-sm-10">
+									<select name="selectCurso" id="selectCurso" class="form-group" required>
+										<option></option>
+										<option value="programacao-estruturada">Programação Estruturada</option>
+										<option value="poo">Programação Orientada a Objetos</option>
+										<option value="java">Java</option>
+										<option value="sgbd">Sistemas de Banco de Dados</option>
+										<option value="prog-bd">Programação de Banco de Dados</option>
+										<option value="redes">Redes de Computadores</option>
+										<option value="c#">Programação C#</option>
+										<option value="inteligencia">Inteligência Artificial</option>
+										<option value="ihm">Interface Homem-Máquina</option>
+										<option value="prog-concorrente">Programação Concorrente</option>
+										<option value="xml">XML</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="selectDependencia" class="col-sm-2 control-label">Dependência:</label>
+								<div class="col-sm-10">
+									<select name="selectDependencia" id="selectDependencia" class="form-group" required>
+										<option></option>
+										<option value="rdr">RDR</option>
+										<option value="str">STR</option>
+										<option value="gtr">GTR</option>
+										<option value="trt">TRT</option>
+										<option value="ster">STER</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="selectSemestre" class="col-sm-2 control-label">Semestre:</label>
+								<div class="col-sm-10">
+									<select name="selectSemestre" id="selectSemestre" class="form-group" required>
+										<option></option>
+										<option value="1">1º</option>
+										<option value="2">2º</option>
+										<option value="3">3º</option>
+										<option value="4">4º</option>
+										<option value="5">5º</option>
+										<option value="6">6º</option>
+										<option value="7">7º</option>
+										<option value="8">8º</option>
+										<option value="9">9º</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputPhone" class="col-sm-2 control-label">Telefone:</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="inputPhone" required>
+								</div>
+							</div>
+
+							<div class="form-group" required>
+								<label for="radioSexo" class="col-sm-2 control-label">Sexo:</label>
+
+								<label class="radio-inline">
+									<input type="radio" name="optionSexo" id="optionMasculino" value="masculino">Masculino
+								</label>
+
+								<label class="radio-inline">
+									<input type="radio" name="optionSexo" id="optionFeminino" value="feminino">Feminino
+								</label>
+							</div>
+
+							<div class="form-group">
+								<label for="inputNasc" class="col-sm-2 control-label">Nascimento:</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="inputNasc" required>
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputEmail" class="col-sm-2 control-label">Email:</label>
+								<div class="col-sm-10">
+									<input type="text" class="form-control" id="inputEmail">
+								</div>
+							</div>
 						</form>
+
+						<button type="button" class="btn btn-success">Cadastrar</button>
+						<button type="button" class="btn btn-warning">Editar</button>
+						<button type="button" class="btn btn-danger">Excluir</button>
 					</div>
 				</div>
 			</div>
