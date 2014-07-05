@@ -1,28 +1,25 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 footer {
-    padding-top: 20px;
-    border-top: 1px solid #CCC;
-    position: absolute;
-    bottom: 50px;
-    width: 100%;
+  padding: 20px 0;
+  border-top: 1px solid #CCC;
 }
 
 .wrapper {
-    padding-top: 80px;
-    padding-bottom: 60px;
+  padding-top: 80px;
+  padding-bottom: 60px;
 }
 
 .copyright {
-    padding: 5px 0 0;
-    background: #666;
-    color: #FFF;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  padding: 5px 0 0;
+  background: #666;
+  color: #FFF;
+  position: bottom;
+  bottom: 0;
+  width: 100%;
 }
 
 .container-2 {
