@@ -21,7 +21,7 @@
 <body>
 
 	<nav class="navbar navbar-default" role="navigation">
-		<div class="container">
+		<div class="container container-2">
 			<div class="navbar-header">
 				<a href="#" class="navbar-brand">Logo</a>
 			</div>
@@ -31,11 +31,11 @@
 	<div class="wrapper" role="main">
 		<div class="container">
 			<div class="row">
-				<div id="apresentacao" class="col-xs-12 col-sm-8 col-md-9">
-					<h3><p>Aqui será o espaço de apresentação do sistema</p></h3>
+				<div id="apresentacao" class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+					<h3><p class="well">Aqui será o espaço de apresentação do sistema</p></h3>
 				</div>
 					
-				<div id="form_login" class="col-xs-12 col-sm-4 col-md-3">
+				<div id="form_login" class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
 					<form class="form signin" role="form">
 						<h2 class="form-signin-heading">Login</h2>
 						<div class="input-group">
@@ -76,7 +76,7 @@
 	</footer>
 
   <div class="copyright">
-	<div class="container">
+	<div class="container container-2">
 	  <div class="row">
 		<div class="col-md-12">
 		  <p><span class="glyphicon glyphicon-copyright-mark"></span> Todos os Direitos Reservados</p>
@@ -90,6 +90,7 @@
 	================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 
+	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
   </body>
 </html>

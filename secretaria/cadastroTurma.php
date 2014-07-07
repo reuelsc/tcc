@@ -9,7 +9,6 @@
 
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="../css/datepicker.css">
 </head>
 <body>
 
@@ -28,11 +27,11 @@
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Usuário <span class="glyphicon glyphicon-user"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Usuário <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Sub1</a></li>
 							<li><a href="#">Sub2</a></li>
-							<li><a href="#">Sub3</a></li>
+							<li><a href="#">Sair <span class="pull-right glyphicon glyphicon-log-out"></span></a></li>
 						</ul>
 					</li>
 				</ul>
@@ -102,10 +101,10 @@
 									</div>
 
 									<div class="form-group">
-										<label for="inputDate" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Data:</label>
+										<label for="Date" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Data:</label>
 										<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
-											<div class="input-group">
-												<input type="text" class="form-control" id="inputDate" data-date-format="dd/mm/yyyy">
+											<div class="input-group date" id="datepicker" data-date-format="dd/mm/yyyy">
+												<input type="text" class="form-control">
 												<span class="input-group-addon">
 													<span class="glyphicon glyphicon-calendar"></span>
 												</span>
@@ -114,10 +113,10 @@
 									</div>
 
 									<div class="form-group">
-										<label for="inputHora" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Hora:</label>
+										<label for="Hora" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Hora:</label>
 										<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
-											<div class="input-group">
-												<input type="text" class="form-control" id="inputHora">
+											<div class="input-group date" id="inputHora">
+												<input type="text" class="form-control" />
 												<span class="input-group-addon">
 													<span class="glyphicon glyphicon-time"></span>
 												</span>
@@ -208,14 +207,5 @@
 
 	<script src="../js/jquery.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
-	<script src="../js/bootstrap-datepicker.js"></script>
-
-	<script type="text/javascript">
-		$(function() {
-			var options = new Array();
-			options['language'] = 'pt-BR';
-			$('.glyphicon-calendar').datepicker(options);
-		})
-	</script>
 </body>
 </html>

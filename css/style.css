@@ -4,8 +4,11 @@
 }
 
 footer {
-  padding: 20px 0;
-  border-top: 1px solid #CCC;
+    padding-top: 20px;
+    border-top: 1px solid #CCC;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
 }
 
 .wrapper {
@@ -14,12 +17,12 @@ footer {
 }
 
 .copyright {
-  padding: 5px 0 0;
-  background: #666;
-  color: #FFF;
-  position: bottom;
-  bottom: 0;
-  width: 100%;
+    padding: 5px 0 0;
+    background: #666;
+    color: #FFF;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 .container-2 {
@@ -192,42 +195,4 @@ footer {
   .sidebar-nav .navbar li a > .caret {
     margin-top: 8px;
   }
-}
-
-/* User Menu */
-.dropdown {
-    border-radius:4px;
-    width: 100px;
-}
-
-.dropdown-menu>li>a {
-  color: #428bca;
-}
-
-.dropdown ul.dropdown-menu {
-  border-radius: 4px;
-  box-shadow: none;
-  margin-top: 15px;
-}
-
-.dropdown ul.dropdown-menu:before {
-  content: "";
-  border-bottom: 10px solid #FFF;
-  border-right: 10px solid transparent;
-  border-left: 10px solid transparent;
-  position: absolute;
-  top: -10px;
-  right: 16px;
-  z-index: 10px;
-}
-
-.dropdown ul.dropdown-menu:after {
-  content: "";
-  border-bottom: 12px solid #CCC;
-  border-right: 12px solid transparent;
-  border-left: 12px solid transparent;
-  position: absolute;
-  top: -12px;
-  right: 14px;
-  z-index: 9px;
 }
