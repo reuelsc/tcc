@@ -211,11 +211,13 @@
 	<script src="../js/bootstrap-datepicker.js"></script>
 
 	<script type="text/javascript">
-		$('.input-group.date').datepicker({
-			format: "dd/mm/yyyy",
-			language: "pt-BR",
-			autoclose: true,
-			todayHighlight: true
+		$(function(){
+			$('.input-group.date').datepicker({
+				format: "dd/mm/yyyy",
+				language: "pt-BR",
+				autoclose: true,
+				todayHighlight: true
+			});
 		});
 	</script>
 </body>
