@@ -4,11 +4,8 @@
 }
 
 footer {
-    padding-top: 20px;
-    border-top: 1px solid #CCC;
-    position: absolute;
-    bottom: 40px;
-    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid #CCC; 
 }
 
 .wrapper {
@@ -18,11 +15,8 @@ footer {
 
 .copyright {
     padding: 5px 0 0;
-    background: #666;
+    background: none repeat scroll 0 0 #666;
     color: #FFF;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
 }
 
 .container-2 {

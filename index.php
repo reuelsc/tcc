@@ -20,13 +20,13 @@
 
 <body>
 
-	<nav class="navbar navbar-default" role="navigation">
+	<div class="navbar navbar-default" role="navigation">
 		<div class="container container-2">
 			<div class="navbar-header">
 				<a href="#" class="navbar-brand">Logo</a>
 			</div>
 		</div>
-	</nav>
+	</div>
 
 	<div class="wrapper" role="main">
 		<div class="container">
