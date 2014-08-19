@@ -21,7 +21,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a href="#" class="navbar-brand">Logo</a>
+				<a href="#" class="navbar-brand">{Logo}</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="navbar-collapse">
@@ -54,14 +54,28 @@
 						<h3><span class="glyphicon glyphicon-th-list"></span> Lista de Alunos</h3>
 					</div>
 
-					<button type="button" class="btn btn-success">Cadastrar Aluno</button>
-					<br>
+					<div class="row">
+						<div class="col-md-10">
+							<button type="button" class="btn btn-success">Cadastrar Aluno</button>
+						</div>
+
+						<div class="col-md-2">
+							<ul class="pagination">
+								<li><a href="#">&laquo;</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">&raquo;</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="clearfix"></div>
 
 					<div class="table-responsive">
 						<table class="table table-striped bordered">
 							<thead class="h4">
 								<tr>
-									<th>Nome</th>
+									<th>Nome <span class="glyphicon glyphicon-search"></span><span class="caret"></span></th>
 									<th>Ação</th>
 								</tr>
 							</thead>
@@ -69,8 +83,8 @@
 								<tr>
 									<td>Reuel Scarabele Cardoso</td>
 									<td><button type="button" class="btn btn-warning btn-xs">Editar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
-									<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
-										<div class="modal-dialog">
+									<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="modal-delete" aria-hidden="true">
+										<div class="modal-dialog modal-sm">
 											<div class="modal-content">
 												<div class="modal-header">
 													<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Sair</span></button>
@@ -94,6 +108,17 @@
 								</tr>
 							</tbody>
 						</table>
+					</div>
+
+					<div class="row">
+						<div class="col-md-offset-10 col-md-2">
+							<ul class="pagination">
+								<li><a href="#">&laquo;</a></li>
+								<li><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">&raquo;</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
