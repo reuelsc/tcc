@@ -49,7 +49,7 @@
 	<div class="wrapper" role="main">
 		<div class="container container-fluid">
 			<div class="row">
-				<div id="conteudo" class="col-md-12">
+				<div id="conteudo" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<div class="page-header">
 						<h3><span class="glyphicon glyphicon-th-list"></span> Cadastro de Aluno</h3>
 					</div>
@@ -133,15 +133,13 @@
 								<div class="form-group">
 									<label for="radioSexo" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Sexo:</label>
 									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
-										<div class="btn-group" data-toggle="buttons">
-											<label class="btn btn-primary">
-												<input type="radio" name="optionSexo" id="optionMasculino" value="masculino">Masculino
-											</label>
+										<label class="btn btn-primary">
+											<input type="radio" name="optionSexo" id="optionMasculino" value="masculino"> Masculino
+										</label>
 											
-											<label class="btn btn-primary">
-												<input type="radio" name="optionSexo" id="optionFeminino" value="feminino">Feminino
-											</label>
-										</div>
+										<label class="btn btn-primary">
+											<input type="radio" name="optionSexo" id="optionFeminino" value="feminino"> Feminino
+										</label>
 									</div>
 								</div>
 
