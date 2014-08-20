@@ -75,7 +75,20 @@
 						<table class="table table-striped bordered">
 							<thead class="h4">
 								<tr>
-									<th>Nome <span class="glyphicon glyphicon-search"></span><span class="caret"></span></th>
+									<th id="name">
+										<span id="nameHeader" style="cursor:pointer;">Nome</span>
+										<span id="nameCaret" class="caret" style="display:none;"></span>
+										<span id="namePesquisarIcon" class="glyphicon glyphicon-search"></span>
+										<div id="namePesquisar" class="hide">
+											<div class="input-group">
+												<input type="text" id="nameInput" class="form-control" />
+												<span class="input-group-btn">
+													<button id="nameApagarPesquisa" class="btn btn-default" type="button" onclick="removerFiltro('nome')"><span class="glyphicon glyphicon-remove"></span></button>
+												</span>
+											</div>
+										</div>
+										<span id="nameApagarPesquisaIcon" class="glyphicon glyphicon-remove-sign" style="display:none;"></span>
+									</th>
 									<th>Ação</th>
 								</tr>
 							</thead>
