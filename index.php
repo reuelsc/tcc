@@ -29,8 +29,8 @@
 	</div>
 
 	<div class="wrapper" role="main">
-		<div class="container">
-			<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+		<div class="container container-fluid">
+			<div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2">
 				<div class="panel panel-info">
 					<div class="panel-heading">
 						<div class="panel-title">Login</div>
