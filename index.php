@@ -21,69 +21,98 @@
 <body>
 
 	<div class="navbar navbar-default" role="navigation">
-		<div class="container container-2">
+		<div class="container container-fluid">
 			<div class="navbar-header">
-				<a href="#" class="navbar-brand">Logo</a>
+				<a href="#" class="navbar-brand">{Logo}</a>
 			</div>
 		</div>
 	</div>
 
 	<div class="wrapper" role="main">
 		<div class="container">
-			<div class="row">
-				<div id="apresentacao" class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
-					<h3><p class="well">Aqui será o espaço de apresentação do sistema</p></h3>
-				</div>
-					
-				<div id="form_login" class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-					<form class="form signin" role="form">
-						<h2 class="form-signin-heading">Login</h2>
-						<div class="input-group">
-							<span class="input-group-addon">
-								<span class="glyphicon glyphicon-user"></span>
-							</span>
-							<input class="form-control" type="login" placeholder="Login" autofocus required>
-						</div>
+			<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+				<div class="panel panel-info">
+					<div class="panel-heading">
+						<div class="panel-title">Login</div>
+						<div style="float:right; font-size:80%; position:relative; top:-10px"><a href="#">Esqueceu a senha?</a></div>
+					</div>
 
-						<div class="input-group">
-							<span class="input-group-addon">
-								<span class="glyphicon glyphicon-lock"></span>
-							</span>
-							<input class="form-control" type="password" placeholder="Senha" required>
-						</div>
-									
-						<br />
+					<div style="padding-top:30px;" class="panel-body">
+						<div style="display:none;" id="login-alert" class="alert alert-danger col-sm-12"></div>
 
-						<button class="btn btn-primary pull-left" type="submit" value="Entrar" name="Submit">Entrar</button>
-					</form>
+						<form method="" id="loginform" class="form-horizontal" role="form">
+							<div style="margin-bottom:25px;" class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+								<input type="text" id="login-username" class="form-control" name="username" placeholder="CPF">
+							</div>
+
+							<div style="margin-bottom:25px;" class="input-group">
+								<span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+								<input type="password" id="login-password" class="form-control" name="password" placeholder="Senha">
+							</div>
+
+							<div style="margin-top:10px" class="form-group">
+								<div class="col-sm-12 controls">
+									<label class="btn btn-primary">
+										<input type="checkbox" id="login-remember" name="remember" value="1"> Lembrar-me</input>
+									</label>
+									<a href="#" id="btn-login" class="btn btn-success">Login</a>
+								</div>
+							</div>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<footer>
-		<div class="container container-2">
+	<!--<div class="wrapper" role="main">
+		<div class="container">
 			<div class="row">
-				<div class="col-xs-12 col-sm-3 col-md-6">
-					<h5><p>Anhanguera Educacional Faculdade de Negócios e Tecnologia da Informação - FACNET<br />Fone: (61) 0000-0000 Fax: (61) 0000-0000<br />Taguatinga-DF</p></h5>
-				</div>
+				<form class="form-signin" role="form">
+					<h2 class="form-signin-heading">Login</h2>
+					<div class="form-group">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="input-group">
+								<span class="input-group-addon">
+									<span class="glyphicon glyphicon-user"></span>
+								</span>
+								<input class="form-control" type="login" placeholder="Login" autofocus required>
+							</div>
+						</div>
+					</div>
 
-				<div id="logoFooter" class="col-xs-12 col-sm-3 col-md-3 col-md-offset-3 col-md-3">
-					<h2>Logo</h2>
+					<div class="form-group">
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<div class="input-group">
+								<span class="input-group-addon">
+									<span class="glyphicon glyphicon-lock"></span>
+								</span>
+								<input class="form-control" type="password" placeholder="Senha" required>
+							</div>
+						</div>
+					</div>
+									
+					<br />
+
+					<button class="btn btn-primary pull-left" type="submit" value="Entrar" name="Submit">Entrar</button>
+				</form>
+			</div>
+		</div>
+	</div>-->
+
+	<footer class="navbar navbar-fixed-bottom">
+		<div class="copyright">
+			<div class="container container-fluid">
+			  <div class="row">
+				<div class="col-md-12">
+				  <p>&copy; Todos os direitos reservados</p>
 				</div>
+			  </div>
 			</div>
 		</div>
 	</footer>
 
-  <div class="copyright">
-	<div class="container container-2">
-	  <div class="row">
-		<div class="col-md-12">
-		  <p><span class="glyphicon glyphicon-copyright-mark"></span> Todos os Direitos Reservados</p>
-		</div>
-	  </div>
-	</div>
-  </div>
 
 
 	<!-- Bootstrap core JavaScript
