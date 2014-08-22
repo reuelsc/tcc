@@ -75,7 +75,7 @@
 						<table class="table table-striped bordered">
 							<thead class="h4">
 								<tr>
-									<th>Nome <span class="glyphicon glyphicon-search"></span><span class="caret"></span></th>
+									<th>Nome <span class="glyphicon glyphicon-search"></span></th>
 									<th>Ação</th>
 								</tr>
 							</thead>
@@ -125,14 +125,14 @@
 		</div>
 	</div>
 
-	<footer>
+	<footer class="navbar navbar-fixed-bottom">
 		<div class="copyright">
 			<div class="container container-fluid">
-				<div class="row">
-					<div class="col-md-12">
-						<p>&copy; Todos os direitos reservados</p>
-					</div>
+			  <div class="row">
+				<div class="col-md-12">
+				  <p>&copy; Todos os direitos reservados</p>
 				</div>
+			  </div>
 			</div>
 		</div>
 	</footer>

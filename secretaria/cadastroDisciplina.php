@@ -282,12 +282,14 @@
 		</div>
 	</div>-->
 
-	<footer class="copyright">
-		<div class="container container-fluid">
-			<div class="row">
+	<footer class="navbar navbar-fixed-bottom">
+		<div class="copyright">
+			<div class="container container-fluid">
+			  <div class="row">
 				<div class="col-md-12">
-					<p>&copy; Todos os direitos reservados</p>
+				  <p>&copy; Todos os direitos reservados</p>
 				</div>
+			  </div>
 			</div>
 		</div>
 	</footer>
