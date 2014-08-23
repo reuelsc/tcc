@@ -9,6 +9,11 @@
 
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/style.css">
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body>
 
@@ -165,7 +170,7 @@
 	</div>
 
 	<!--<div class="wrapper" role="main">
-		<div class="container container-2">
+		<div class="container container-fluid">
 			<div class="row affix-row">
 				<div id="menu" class="col-xs-12 col-sm-3 col-md-2 affix-sidebar">
 					<div class="sidebar-nav">
@@ -210,7 +215,7 @@
 				</div>
 
 				<div id="conteudo" class="col-xs-12 col-sm-9 col-md-10 affix-content">
-					<div class="container container-2">
+					<div class="container container-fluid">
 						<div class="page-header">
 							<h3><span class="glyphicon glyphicon-th-list"></span> Cadastro de Usuário</h3>
 						</div>

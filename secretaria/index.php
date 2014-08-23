@@ -61,7 +61,7 @@
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 							<div class="well">
-								<h1>Bem Vindo(a) Coordenador(a)</h1>
+								<h1>Bem Vinda Secretária</h1>
 							</div>
 						</div>
 					</div>
@@ -69,68 +69,6 @@
 			</div>
 		</div>
 	</div>
-
-	<!--<div class="wrapper" role="main">
-		<div class="container container-fluid">
-			<div class="row affix-row">
-				<div id="menu" class="col-xs-12 col-sm-3 col-md-2 affix-sidebar">
-					<div class="sidebar-nav">
-						<div class="navbar navbar-default">
-							<div id="navbar-collapse-1" class="navbar-collapse collapse">
-								<ul class="nav navbar-nav">
-									<li class="active">
-										<a href="#" data-toggle="collapse">
-											<h4>Menu</h4>
-										</a>
-									</li>
-									<li>
-										<a href="#" data-toggle="collapse" data-target="#toggleSidebar" data-parent="#sidenav01" class="collapsed">
-											<span>Submenu 1 <span class="caret pull-right"></span></span>
-										</a>
-										<div class="collapse" id="toggleSidebar" style="height: 0px;">
-											<ul class="nav nav-list">
-												<li><a href="#">Submenu 1.1</a></li>
-												<li><a href="#">Submenu 1.2</a></li>
-												<li><a href="#">Submenu 1.3</a></li>
-											</ul>
-										</div>
-									</li>
-									<li>
-										<a href="#" data-toggle="collapse" data-target="#toggleSidebar2" data-parent="#sidenav02" class="collapsed">
-											<span>Submenu 2 <span class="caret pull-right"></span></span>
-										</a>
-										<div class="collapse" id="toggleSidebar2" style="height: 0px;">
-											<ul class="nav nav-list">
-												<li><a href="#">Submenu 2.1</a></li>
-												<li><a href="#">Submenu 2.2</a></li>
-												<li><a href="#">Submenu 2.3</a></li>
-											</ul>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div id="conteudo" class="col-xs-12 col-sm-9 col-md-10 affix-content">
-				<div class="container">
-					<div class="page-header">
-						<h3><span class="glyphicon glyphicon-th-list"> Navigation</span></h3>
-					</div>
-
-					<form class="form-horizontal" role="form">
-						<form class="form-group">
-							<label for="inputName">Nome: </label>
-							<input type="name" class="form-control" id="inputName">
-						</form>
-					</form>
-					
-				</div>
-			</div>
-			</div>
-		</div>
-	</div>-->
 
 	<footer class="navbar navbar-fixed-bottom">
 		<div class="copyright">

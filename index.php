@@ -8,7 +8,6 @@
 
 	<title>SAD - Login</title>
 
-	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 
