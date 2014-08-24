@@ -30,8 +30,8 @@
 
 			<div class="collapse navbar-collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li><a href="#">Menu 1</a></li>
-					<li><a href="#">Menu 2</a></li>
+					<li class="active"><a href="../coordenador/index.php">Home</a></li>
+					<li><a href="../coordenador/alunos.php">Alunos</a></li>
 					<li><a href="#">Menu 3</a></li>
 					<li><a href="#">Menu 4</a></li>
 				</ul>
