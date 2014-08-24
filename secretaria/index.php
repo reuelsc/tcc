@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Coordenação</title>
+	<title>Secretaria</title>
 
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/style.css">
@@ -30,10 +30,10 @@
 
 			<div class="collapse navbar-collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li><a href="#">Menu 1</a></li>
-					<li><a href="#">Menu 2</a></li>
-					<li><a href="#">Menu 3</a></li>
-					<li><a href="#">Menu 4</a></li>
+					<li class="active"><a href="../secretaria/index.php">Home</a></li>
+					<li><a href="../secretaria/alunos.php">Alunos</a></li>
+					<li><a href="../secretaria/turmas.php">Turmas</a></li>
+					<li><a href="../secretaria/disciplinas.php">Disciplinas</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
@@ -41,7 +41,9 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Usuário <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Sub1</a></li>
+							<li class="divider"></li>
 							<li><a href="#">Sub2</a></li>
+							<li class="divider"></li>
 							<li><a href="#">Sair <span class="pull-right glyphicon glyphicon-log-out"></span></a></li>
 						</ul>
 					</li>
