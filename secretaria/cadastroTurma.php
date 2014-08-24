@@ -72,16 +72,7 @@
 									</div>
 								</div>
 
-								<div class="well">
-									<div id="datepicker" class="input-append">
-										<input type="text" data-format="dd/MM/yyyy">
-										<span class="add-on">
-											<i data-time-picker="glyphicon glyphicon-time" data-date-icon="glyphicon glyphicon-calendar"></i>
-										</span>
-									</div>
-								</div>
-
-								<!--<div class="form-group">
+								<div class="form-group">
 									<label for="Date" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Data:</label>
 									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
 										<div class="input-group date">
@@ -91,7 +82,7 @@
 											</span>
 										</div>
 									</div>
-								</div>-->
+								</div>
 
 								<div class="form-group">
 									<label for="Hora" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Hora:</label>
@@ -317,13 +308,5 @@
 	<script src="../js/jquery.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/bootstrap-datetimepicker.min.js"></script>
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$('#datepicker').datetimepicker({
-				language: 'pt-BR';
-			});
-		});
-	</script>
 </body>
 </html>
