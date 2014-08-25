@@ -43,7 +43,7 @@
 						<ul class="dropdown-menu">
 							<li><a href="#">Sub1</a></li>
 							<li><a href="#">Sub2</a></li>
-							<li><a href="#">Sair <span class="pull-right glyphicon glyphicon-log-out"></span></a></li>
+							<li><a href="#">Sair <span class="glyphicon glyphicon-log-out"></span></a></li>
 						</ul>
 					</li>
 				</ul>

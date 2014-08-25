@@ -20,7 +20,7 @@
 	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container-fluid container">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
 					<span class="sr-only">Toggle Navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -45,7 +45,7 @@
 							<li class="divider"></li>
 							<li><a href="#">Sub2</a></li>
 							<li class="divider"></li>
-							<li><a href="#">Sair <span class="pull-right glyphicon glyphicon-log-out"></span></a></li>
+							<li><a href="#">Sair <span class="glyphicon glyphicon-log-out"></span></a></li>
 						</ul>
 					</li>
 				</ul>

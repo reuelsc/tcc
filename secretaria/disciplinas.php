@@ -20,7 +20,7 @@
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container-fluid container">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
 					<span class="sr-only">Toggle Navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -45,7 +45,7 @@
 							<li class="divider"></li>
 							<li><a href="#">Sub2</a></li>
 							<li class="divider"></li>
-							<li><a href="#">Sair <span class="pull-right glyphicon glyphicon-log-out"></span></a></li>
+							<li><a href="#">Sair <span class="glyphicon glyphicon-log-out"></span></a></li>
 						</ul>
 					</li>
 				</ul>
@@ -71,17 +71,19 @@
 						<table class="table table-striped bordered">
 							<thead class="h4">
 								<tr>
-									<th>Nome <span class="glyphicon glyphicon-search"></span></th>
+									<th>Código</th>
+									<th>Disciplina <span class="glyphicon glyphicon-search"></span></th>
 									<th>Professor</th>
-									<th>Turma Ativa</th>
+									<th>Situação</th>
 									<th>Ação</th>
 								</tr>
 							</thead>
 							<tbody class="h5">
 								<tr>
-									<td>Turma TCC</td>
+									<td>010</td>
+									<td>Trabalho de Conclusão de Curso II</td>
 									<td>Guilherme Parente Costa</td>
-									<td>Sim</td>
+									<td>Ativa</td>
 									<td><button type="button" class="btn btn-warning btn-xs">Editar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
 									<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="modal-delete" aria-hidden="true">
 										<div class="modal-dialog modal-sm">
@@ -90,7 +92,7 @@
 													<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Sair</span></button>
 												</div>
 												<div class="modal-body">
-													<p>Tem certeza que deseja remover essa turma?</p>
+													<p>Tem certeza que deseja remover essa disciplina?</p>
 												</div>
 												<div class="modal-footer">
 													<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
