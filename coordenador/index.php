@@ -32,8 +32,9 @@
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="../coordenador/index.php">Home</a></li>
 					<li><a href="../coordenador/alunos.php">Alunos</a></li>
-					<li><a href="#">Menu 3</a></li>
-					<li><a href="#">Menu 4</a></li>
+					<li><a href="../coordenador/turmas.php">Turmas</a></li>
+					<li><a href="../coordenador/disciplinas.php">Disciplinas</a></li>
+					<li><a href="../coordenador/usuarios.php">Usuários</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
@@ -41,8 +42,10 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Usuário <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Sub1</a></li>
+							<li class="divider"></li>
 							<li><a href="#">Sub2</a></li>
-							<li><a href="#">Sair <span class="pull-right glyphicon glyphicon-log-out"></span></a></li>
+							<li class="divider"></li>
+							<li><a href="#">Sair <span class="glyphicon glyphicon-log-out"></span></a></li>
 						</ul>
 					</li>
 				</ul>

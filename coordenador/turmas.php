@@ -7,8 +7,8 @@
 
 	<title>Turmas</title>
 
-	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="../css/bootstrap.css">
+	<link rel="stylesheet" href="../css/style.css">
 
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -20,7 +20,7 @@
 	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 		<div class="container-fluid container">
 			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
 					<span class="sr-only">Toggle Navigation</span>
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
@@ -31,10 +31,11 @@
 
 			<div class="collapse navbar-collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li><a href="#">Menu 1</a></li>
-					<li><a href="#">Menu 2</a></li>
-					<li><a href="#">Menu 3</a></li>
-					<li><a href="#">Menu 4</a></li>
+					<li><a href="../coordenador/index.php">Home</a></li>
+					<li><a href="../coordenador/alunos.php">Alunos</a></li>
+					<li class="active"><a href="../coordenador/turmas.php">Turmas</a></li>
+					<li><a href="../coordenador/disciplinas.php">Disciplinas</a></li>
+					<li><a href="../coordenador/usuarios.php">Usuários</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
@@ -42,7 +43,9 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Usuário <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Sub1</a></li>
+							<li class="divider"></li>
 							<li><a href="#">Sub2</a></li>
+							<li class="divider"></li>
 							<li><a href="#">Sair <span class="glyphicon glyphicon-log-out"></span></a></li>
 						</ul>
 					</li>
@@ -56,37 +59,30 @@
 			<div class="row">
 				<div id="conteudo" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<div class="page-header">
-						<h3><span class="glyphicon glyphicon-th-list"></span> Lista de Turmas</h3>
+						<h3><span class="glyphicon glyphicon-th-list"></span> Turmas Cadastradas</h3>
 					</div>
 
 					<div class="row">
-						<div class="col-md-10">
-							<button type="button" class="btn btn-success">Cadastrar Turma</button>
-						</div>
-
-						<div class="col-md-2">
-							<ul class="pagination">
-								<li><a href="#">&laquo;</a></li>
-								<li><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">&raquo;</a></li>
-							</ul>
+						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+							<a href="../coordenador/cadastroTurma.php"><button type="button" class="btn btn-success">Nova Turma</button></a>
 						</div>
 					</div>
-
-					<div class="clearfix"></div>
 
 					<div class="table-responsive">
 						<table class="table table-striped bordered">
 							<thead class="h4">
 								<tr>
 									<th>Nome <span class="glyphicon glyphicon-search"></span></th>
+									<th>Professor</th>
+									<th>Turma Ativa</th>
 									<th>Ação</th>
 								</tr>
 							</thead>
 							<tbody class="h5">
 								<tr>
-									<td>Reuel Scarabele Cardoso</td>
+									<td>Turma TCC</td>
+									<td>Guilherme Parente Costa</td>
+									<td>Sim</td>
 									<td><button type="button" class="btn btn-warning btn-xs">Editar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
 									<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="modal-delete" aria-hidden="true">
 										<div class="modal-dialog modal-sm">
@@ -106,24 +102,16 @@
 									</div>
 								</tr>
 							</tbody>
-							<tbody class="h5">
-								<tr>
-									<td>Reuel Scarabele Cardoso</td>
-									<td><button type="button" class="btn btn-warning btn-xs">Editar</button> <button type="button" class="btn btn-danger btn-xs">Excluir</button></td>
-								</tr>
-							</tbody>
 						</table>
 					</div>
 
-					<div class="row">
-						<div class="col-md-offset-10 col-md-2">
-							<ul class="pagination">
-								<li><a href="#">&laquo;</a></li>
-								<li><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">&raquo;</a></li>
-							</ul>
-						</div>
+					<div class="text-center">
+						<ul class="pagination pagination-large">
+							<li class="disabled"><a href="#">&laquo;</a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">&raquo;</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -142,8 +130,8 @@
 		</div>
 	</footer>
 	
-	<script src="js/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
 
 </body>
 </html>
