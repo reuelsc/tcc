@@ -10,14 +10,14 @@
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/style.css">
 
-		<!--[if lt IE 9]>
+	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
 </head>
 <body>
 
-	<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container-fluid container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -85,12 +85,16 @@
 										</div>
 										<span id="nameApagarPesquisaIcon" class="glyphicon glyphicon-remove-sign" style="display:none;"></span>
 									</th>
+									<th>RA</th>
+									<th>Disciplina</th>
 									<th>Ação</th>
 								</tr>
 							</thead>
 							<tbody class="h5">
 								<tr>
 									<td>Reuel Scarabele Cardoso</td>
+									<td>1158387827</td>
+									<td>Trabalho de Conclusão de Curso II</td>
 									<td><button type="button" class="btn btn-warning btn-xs">Editar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
 									<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="modal-delete" aria-hidden="true">
 										<div class="modal-dialog modal-sm">
