@@ -16,7 +16,7 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -30,7 +30,7 @@
 
 			<div class="collapse navbar-collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav">
-					<li><a href="#">Menu 1</a></li>
+					<li class="active"><a href="../professor/index.php">Home</a></li>
 					<li><a href="#">Menu 2</a></li>
 					<li><a href="#">Menu 3</a></li>
 					<li><a href="#">Menu 4</a></li>
@@ -41,7 +41,9 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Usuário <span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li><a href="#">Sub1</a></li>
+							<li class="divider"></li>
 							<li><a href="#">Sub2</a></li>
+							<li class="divider"></li>
 							<li><a href="#">Sair <span class="glyphicon glyphicon-log-out"></span></a></li>
 						</ul>
 					</li>
@@ -55,7 +57,7 @@
 			<div class="row">
 				<div id="conteudo" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<div class="page-header">
-						<h3><span class="glyphicon glyphicon-th-list"></span> Home</h3>
+						<h3><span class="glyphicon glyphicon-home"></span> Home</h3>
 					</div>
 
 					<div class="row">

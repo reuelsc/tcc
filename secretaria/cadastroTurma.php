@@ -18,7 +18,7 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container-fluid container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -75,6 +75,18 @@
 								<div class="form-group">
 									<label for="Date" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Data:</label>
 									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
+										<div class="input-group date" id="datepicker">
+											<input type="text" class="form-control" data-date-format="DD/MM/YYYY">
+											<span class="input-group-addon">
+												<span class="glyphicon glyphicon-calendar"></span>
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<!--<div class="form-group">
+									<label for="Date" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Data:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
 										<div class="input-group date">
 											<input type="text" class="form-control">
 											<span class="input-group-addon">
@@ -82,7 +94,7 @@
 											</span>
 										</div>
 									</div>
-								</div>
+								</div>-->
 
 								<div class="form-group">
 									<label for="Hora" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Hora:</label>
@@ -166,5 +178,13 @@
 	<script src="../js/jquery.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 	<script src="../js/bootstrap-datetimepicker.min.js"></script>
+
+	<script type="text/javascript">
+		$(function() {
+			$('#datepicker').datetimepicker({
+				pickTime: false;
+			});
+		});
+	</script>
 </body>
 </html>

@@ -16,7 +16,7 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -58,7 +58,7 @@
 			<div class="row">
 				<div id="conteudo" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<div class="page-header">
-						<h3><span class="glyphicon glyphicon-th-list"></span> Home</h3>
+						<h3><span class="glyphicon glyphicon-home"></span> Home</h3>
 					</div>
 
 					<div class="row">
