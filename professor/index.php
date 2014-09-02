@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
@@ -31,20 +31,18 @@
 			<div class="collapse navbar-collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav">
 					<li class="active"><a href="../professor/index.php">Home</a></li>
-					<li><a href="#">Menu 2</a></li>
-					<li><a href="#">Menu 3</a></li>
-					<li><a href="#">Menu 4</a></li>
+					<li><a href="../professor/notasFrequencias.php">Notas</a></li>
+					<li><a href="#">Frequência</a></li>
+					<li><a href="#">Relatório</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Usuário <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="#">Sub1</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Editar Perfil</a></li>
 							<li class="divider"></li>
-							<li><a href="#">Sub2</a></li>
-							<li class="divider"></li>
-							<li><a href="#">Sair <span class="glyphicon glyphicon-log-out"></span></a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Sair</a></li>
 						</ul>
 					</li>
 				</ul>
