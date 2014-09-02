@@ -132,12 +132,9 @@
 			container: 'body',
 			html: true,
 			template: '<div class="popover"><div class="arrow"></div><div class="popover-content"></div></div>',
-			content: '<div class="input-group"><input type="text" class="form-control" /><span class="input-group-btn"><button class="btn btn-success" type="button"><span class="glyphicon glyphicon-check><button class="btn btn-danger" type="button"><span class="glyphicon glyphicon-remove"></span></button></span></button></span></div><span class="glyphicon glyphicon-remove-sign" style="display: none;"></span>',
+			content: '<div class="input-group"><input type="text" class="form-control" /><span class="input-group-btn"><button class="btn btn-danger" type="button"><span class="glyphicon glyphicon-remove"></span></button></span></div><span class="glyphicon glyphicon-remove-sign" style="display: none;"></span>',
 			placement: 'right',
 		});
-
-		$('#pesquisa').popover('hide');
 	</script>
-
 </body>
 </html>
