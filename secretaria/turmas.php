@@ -139,6 +139,5 @@
 			placement: 'right',
 		});
 	</script>
-
 </body>
 </html>
