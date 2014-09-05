@@ -19,7 +19,7 @@
 
 <body>
 
-	<div class="navbar navbar-default" role="navigation">
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container container-fluid">
 			<div class="navbar-header">
 				<a href="#" class="navbar-brand">{Logo}</a>
