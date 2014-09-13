@@ -19,13 +19,13 @@
 
 <body>
 
-	<div class="navbar navbar-default" role="navigation">
+	<nav class="navbar navbar-inverse" role="navigation">
 		<div class="container container-fluid">
 			<div class="navbar-header">
 				<a href="#" class="navbar-brand">{Logo}</a>
 			</div>
 		</div>
-	</div>
+	</nav>
 
 	<div class="wrapper" role="main">
 		<div class="container container-fluid">
@@ -33,7 +33,7 @@
 				<div class="panel panel-info">
 					<div class="panel-heading">
 						<div class="panel-title">Login</div>
-						<div style="float:right; font-size:80%; position:relative; top:-10px"><a href="#">Esqueceu a senha?</a></div>
+						<div style="float:right; font-size:80%; position:relative; top:-10px;"><a href="#">Esqueceu a senha?</a></div>
 					</div>
 
 					<div style="padding-top:30px;" class="panel-body">
@@ -55,7 +55,7 @@
 									<label class="btn btn-primary">
 										<input type="checkbox" id="login-remember" name="remember" value="1"> Lembrar-me</input>
 									</label>
-									<a href="#" id="btn-login" class="btn btn-success">Login</a>
+									<button class="btn btn-primary btn-success" name="login" type="submit" value="login">Login</button>
 								</div>
 							</div>
 						</form>
@@ -64,42 +64,7 @@
 			</div>
 		</div>
 	</div>
-
-	<!--<div class="wrapper" role="main">
-		<div class="container">
-			<div class="row">
-				<form class="form-signin" role="form">
-					<h2 class="form-signin-heading">Login</h2>
-					<div class="form-group">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<div class="input-group">
-								<span class="input-group-addon">
-									<span class="glyphicon glyphicon-user"></span>
-								</span>
-								<input class="form-control" type="login" placeholder="Login" autofocus required>
-							</div>
-						</div>
-					</div>
-
-					<div class="form-group">
-						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<div class="input-group">
-								<span class="input-group-addon">
-									<span class="glyphicon glyphicon-lock"></span>
-								</span>
-								<input class="form-control" type="password" placeholder="Senha" required>
-							</div>
-						</div>
-					</div>
-									
-					<br />
-
-					<button class="btn btn-primary pull-left" type="submit" value="Entrar" name="Submit">Entrar</button>
-				</form>
-			</div>
-		</div>
-	</div>-->
-
+	
 	<footer class="navbar navbar-fixed-bottom">
 		<div class="copyright">
 			<div class="container container-fluid">
@@ -112,13 +77,7 @@
 		</div>
 	</footer>
 
-
-
-	<!-- Bootstrap core JavaScript
-	================================================== -->
-	<!-- Placed at the end of the document so the pages load faster -->
-
 	<script src="js/jquery.js"></script>
 	<script src="js/bootstrap.js"></script>
-  </body>
+</body>
 </html>

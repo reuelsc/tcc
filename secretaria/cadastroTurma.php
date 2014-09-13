@@ -9,7 +9,7 @@
 
 	<link rel="stylesheet" href="../css/bootstrap.css">
 	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
+	<link rel="stylesheet" href="../css/datepicker.css">
 
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -73,10 +73,10 @@
 								<div class="form-group">
 									<label for="Date" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Data:</label>
 									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
-										<div class="input-group date" id="datepicker">
-											<input type="text" class="form-control" data-date-format="DD/MM/YYYY">
+										<div class="input-group" id="datepicker">
+											<input type="text" class="form-control" id="calendar">
 											<span class="input-group-addon">
-												<span class="glyphicon glyphicon-calendar"></span>
+												<i class="glyphicon glyphicon-calendar"></i>
 											</span>
 										</div>
 									</div>
@@ -174,13 +174,16 @@
 	</footer>
 
 	<script src="../js/jquery.min.js"></script>
+	<script src="../js/bootstrap-datepicker.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
-	<script src="../js/bootstrap-datetimepicker.min.js"></script>
 
-	<script type="text/javascript">
-		$(function() {
-			$('#datepicker').datetimepicker({
-				pickTime: false;
+	<script>
+		$(document).reaady(function() {
+			$('#calendar').datepicker({
+				format: "dd/mm/yyyy",
+				language: "pt-BR",
+				autoclose: true,
+				multidate: true,
 			});
 		});
 	</script>
