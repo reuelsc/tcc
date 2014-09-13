@@ -19,7 +19,11 @@
 
 <body>
 
+<<<<<<< HEAD
 	<nav class="navbar navbar-inverse" role="navigation">
+=======
+	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+>>>>>>> 5ba0b9f806e84bba3048c25c4c5f65188aafccdb
 		<div class="container container-fluid">
 			<div class="navbar-header">
 				<a href="#" class="navbar-brand">{Logo}</a>
