@@ -7,8 +7,8 @@
 
 	<title>Cadastro de Turma</title>
 
-	<link rel="stylesheet" href="../css/bootstrap.css">
-	<link rel="stylesheet" href="../css/style.css">
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
 
 	<!--[if lt IE 9]>
@@ -150,7 +150,7 @@
 		</div>
 	</div>
 
-	<footer class="navbar navbar-fixed-bottom">
+	<footer class="navbar navbar-inverse navbar-fixed-bottom">
 		<div class="copyright">
 			<div class="container container-fluid">
 			  <div class="row">

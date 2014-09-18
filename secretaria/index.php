@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Secretaria</title>
 
-	<link rel="stylesheet" href="../css/bootstrap.css">
-	<link rel="stylesheet" href="../css/style.css">
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
 
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -83,7 +83,7 @@
 		</div>
 	</div>
 
-	<footer class="navbar navbar-fixed-bottom">
+	<footer class="navbar navbar-inverse navbar-fixed-bottom">
 		<div class="copyright">
 			<div class="container container-fluid">
 			  <div class="row">

@@ -8,7 +8,7 @@
 
 	<title>SAD - Login</title>
 
-	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 
 	<!--[if lt IE 9]>
@@ -18,15 +18,12 @@
 </head>
 
 <body>
-
-<<<<<<< HEAD
 	<nav class="navbar navbar-inverse" role="navigation">
-=======
-	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
->>>>>>> 5ba0b9f806e84bba3048c25c4c5f65188aafccdb
-		<div class="container container-fluid">
-			<div class="navbar-header">
-				<a href="#" class="navbar-brand">{Logo}</a>
+		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container container-fluid">
+				<div class="navbar-header">
+					<a href="#" class="navbar-brand">{Logo}</a>
+				</div>
 			</div>
 		</div>
 	</nav>
@@ -69,7 +66,7 @@
 		</div>
 	</div>
 	
-	<footer class="navbar navbar-fixed-bottom">
+	<footer class="navbar navbar-inverse navbar-fixed-bottom">
 		<div class="copyright">
 			<div class="container container-fluid">
 			  <div class="row">
