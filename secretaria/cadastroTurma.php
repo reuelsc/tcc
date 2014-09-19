@@ -82,18 +82,6 @@
 									</div>
 								</div>
 
-								<!--<div class="form-group">
-									<label for="Date" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Data:</label>
-									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
-										<div class="input-group date">
-											<input type="text" class="form-control">
-											<span class="input-group-addon">
-												<i class="glyphicon glyphicon-calendar"></i>
-											</span>
-										</div>
-									</div>
-								</div>-->
-
 								<div class="form-group">
 									<label for="Hora" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Hora:</label>
 									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
