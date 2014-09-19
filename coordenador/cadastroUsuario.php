@@ -84,18 +84,6 @@
 										<label class="btn btn-primary">
 											<input type="radio" name="optionPerfil" id="optionSecretaria" value="secretaria"> Secretária
 										</label>
-
-										<!--<label class="radio-inline">
-											<input type="radio" name="optionPerfil" id="optionProf" value="professor">Professor</input>
-										</label>
-
-										<label class="radio-inline">
-											<input type="radio" name="optionPerfil" id="optionCoord" value="coordenador">Coordenador</input>
-										</label>
-
-										<label class="radio-inline">
-											<input type="radio" name="optionPerfil" id="optionSecret" value="secretaria">Secretária</input>
-										</label>-->
 									</div>
 								</div>
 
