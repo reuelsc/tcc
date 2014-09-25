@@ -31,6 +31,10 @@
 	<div class="wrapper" role="main">
 		<div class="container container-fluid">
 			<div class="col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2">
+			<div class="alert alert-warning alert-dismissible" role="alert">
+				<button class="close" type="button" data-dismiss="alert"><span aria-hidden="true">&times;<span class="sr-only">Close</span></span></button>
+				<strong>Usuário ou senha incorreto</strong>
+			</div>
 				<div class="panel panel-info">
 					<div class="panel-heading">
 						<div class="panel-title">Login</div>
