@@ -4,21 +4,16 @@
 }
 
 footer {
-  padding: 10px 0 0 0;
-  border-top: 1px solid #CCC;
-}
-
-.pagination {
-  margin: 2px 0 !important;
+  padding-bottom: 0;
 }
 
 .wrapper {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .copyright {
-  padding: 5px 0 0;
+  padding: 13px 0 0 0;
   color: #FFF;
 }
 
