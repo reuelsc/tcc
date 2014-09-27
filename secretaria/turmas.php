@@ -65,19 +65,29 @@
 						</div>
 					</div>
 
+					<hr>
+
+					<div class="row">
+						<div class="col-lg-4">
+							<input type="search" id="container-search" class="form-control" placeholder="Search...">
+						</div>
+					</div>
+
 					<div class="table-responsive">
 						<table class="table table-striped bordered">
 							<thead class="h4">
 								<tr>
-									<th>Nome <span id="pesquisa" style="color:black; cursor:pointer;"><span class="glyphicon glyphicon-search"></span></span></th>
+									<th>Turma</th>
+									<th>Disciplina</th>
 									<th>Professor</th>
 									<th>Turma Ativa</th>
-									<th>Ação</th>
+									<th></th>
 								</tr>
 							</thead>
 							<tbody class="h5">
 								<tr>
 									<td>Turma TCC</td>
+									<td></td>
 									<td>Guilherme Parente Costa</td>
 									<td>Sim</td>
 									<td><button type="button" class="btn btn-warning btn-xs">Editar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
@@ -131,12 +141,10 @@
 	<script src="../js/bootstrap.min.js"></script>
 
 	<script>
-		$('#pesquisa').popover({
-			container: 'body',
-			html: true,
-			template: '<div class="popover"><div class="arrow"></div><div class="popover-content"></div></div>',
-			content: '<div class="input-group"><input type="text" class="form-control" /><span class="input-group-btn"><button class="btn btn-danger" type="button"><span class="glyphicon glyphicon-remove"></span></button></span></div><span class="glyphicon glyphicon-remove-sign" style="display: none;"></span>',
-			placement: 'right',
+		$(function() {
+			$( '#table' ).searchable({
+				searchField: '#container-search',
+			})
 		});
 	</script>
 </body>

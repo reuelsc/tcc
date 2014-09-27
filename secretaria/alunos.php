@@ -65,14 +65,22 @@
 						</div>
 					</div>
 
-					<div class="table-responsive">
-						<table class="table table-striped bordered">
+					<hr>
+
+					<div class="row">
+						<div class="col-lg-4">
+							<input type="search" id="container-search" class="form-control" placeholder="Search...">
+						</div>
+					</div>
+
+					<div class="table-responsive" id="table">
+						<table class="table bordered">
 							<thead class="h4">
 								<tr>
-									<th>Nome <span id="pesquisa" style="color:black; cursor:pointer;"><span class="glyphicon glyphicon-search"></span></span></th>
+									<th>Nome</th>
 									<th>RA</th>
 									<th>Disciplina</th>
-									<th>Ação</th>
+									<th></th>
 								</tr>
 							</thead>
 							<tbody class="h5">
@@ -80,7 +88,55 @@
 									<td>Reuel Scarabele Cardoso</td>
 									<td>1158387827</td>
 									<td>Trabalho de Conclusão de Curso II</td>
-									<td><button type="button" class="btn btn-warning btn-xs">Editar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
+									<td><button type="button" class="btn btn-warning btn-xs">Alterar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
+									<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="modal-delete" aria-hidden="true">
+										<div class="modal-dialog modal-sm">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Sair</span></button>
+												</div>
+												<div class="modal-body">
+													<p>Tem certeza que deseja remover esse aluno?</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+													<button type="button" class="btn btn-danger">Sim</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</tr>
+							</tbody>
+							<tbody class="h5">
+								<tr>
+									<td>Fernando de Jesus Ribeiro</td>
+									<td>2547450767</td>
+									<td>Trabalho de Conclusão de Curso II</td>
+									<td><button type="button" class="btn btn-warning btn-xs">Alterar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
+									<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="modal-delete" aria-hidden="true">
+										<div class="modal-dialog modal-sm">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Sair</span></button>
+												</div>
+												<div class="modal-body">
+													<p>Tem certeza que deseja remover esse aluno?</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+													<button type="button" class="btn btn-danger">Sim</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</tr>
+							</tbody>
+							<tbody class="h5">
+								<tr>
+									<td>Thiago Couto Godoy</td>
+									<td>1183386900</td>
+									<td>Trabalho de Conclusão de Curso II</td>
+									<td><button type="button" class="btn btn-warning btn-xs">Alterar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
 									<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="modal-delete" aria-hidden="true">
 										<div class="modal-dialog modal-sm">
 											<div class="modal-content">
@@ -115,7 +171,7 @@
 		</div>
 	</div>
 
-	<footer class="navbar navbar-inverse navbar-fixed-bottom">
+	<footer>
 		<div class="copyright">
 			<div class="container container-fluid">
 			  <div class="row">
@@ -128,15 +184,14 @@
 	</footer>
 	
 	<script src="../js/jquery.min.js"></script>
+	<script src="//rawgithub.com/stidges/jquery-searchable/master/dist/jquery.searchable-1.0.0.min.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 
 	<script>
-		$('#pesquisa').popover({
-			container: 'body',
-			html: true,
-			template: '<div class="popover"><div class="arrow"></div><div class="popover-content"></div></div>',
-			content: '<div class="input-group"><input type="text" class="form-control" /><span class="input-group-btn"><button class="btn btn-danger" type="button"><span class="glyphicon glyphicon-remove"></span></button></span></div><span class="glyphicon glyphicon-remove-sign" style="display: none;"></span>',
-			placement: 'right',
+		$(function() {
+			$( '#table' ).searchable({
+				searchField: '#container-search',
+			})
 		});
 	</script>
 </body>
