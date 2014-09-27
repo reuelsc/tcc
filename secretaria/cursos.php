@@ -144,9 +144,9 @@
 	<script>
 		$(function() {
 			$( '#table' ).searchable({
-				searchField: '#container-search',
-			})
-		})
+				searchField: '#container-search'
+			});
+		});
 	</script>
 </body>
 </html>

@@ -31,7 +31,7 @@
 			<div class="collapse navbar-collapse" id="navbar-collapse">
 				<ul class="nav navbar-nav">
 					<li><a href="../secretaria/index.php">Home</a></li>
-					<li><a href="../secreataria/alnos.php">Alunos</a></li>
+					<li><a href="../secretaria/alunos.php">Alunos</a></li>
 					<li><a href="../secretaria/turmas.php">Turmas</a></li>
 					<li><a href="../secretaria/disciplinas.php">Disciplinas</a></li>
 					<li><a href="../secretaria/cursos.php">Cursos</a></li>
@@ -93,7 +93,19 @@
 								</div>
 
 								<div class="pull-right">
-									<button type="button" class="btn btn-success">Cadastrar</button>
+									<button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-cadastro">Cadastrar</button>
+									<div class="modal fade" id="modal-cadastro" tabindex="-1" role="dialog" aria-labelledby="modal-cadastro" aria-hidden="true">
+										<div class="modal-dialog modal-sm">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Sair</span></button>
+												</div>
+												<div class="modal-body">
+													<p>Cadastrado com Sucesso!</p>
+												</div>
+											</div>
+										</div>
+									</div>
 									<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-warning">Cancelar</button></a>
 								</div>
 							</div>
