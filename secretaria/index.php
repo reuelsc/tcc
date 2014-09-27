@@ -34,6 +34,7 @@
 					<li><a href="../secretaria/alunos.php">Alunos</a></li>
 					<li><a href="../secretaria/turmas.php">Turmas</a></li>
 					<li><a href="../secretaria/disciplinas.php">Disciplinas</a></li>
+					<li><a href="../secretaria/cursos.php">Cursos</a></li>
 				</ul>
 
 				<div class="nav navbar-nav navbar-right">

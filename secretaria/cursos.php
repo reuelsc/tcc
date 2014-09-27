@@ -61,12 +61,92 @@
 
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<a href="#"><button type="button" class="btn btn-success">Novo Curso</button></a>
+							<a href="../secretaria/cadastroCurso.php"><button type="button" class="btn btn-success">Novo Curso</button></a>
 						</div>
+					</div>
+
+					<hr>
+
+					<div class="row">
+						<div class="col-lg-4">
+							<input type="search" id="container-search" class="form-control" placeholder="Search...">
+						</div>
+					</div>
+
+					<div class="table-responsive">
+						<table class="table bordered">
+							<thead class="h4">
+								<tr>
+									<th>Curso</th>
+									<th>Orientador</th>
+									<th>Tipo</th>
+									<th>Carga Horária</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody class="h5">
+								<tr>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td></td>
+									<td><button type="button" class="btn btn-warning btn-xs">Editar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
+									<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="modal-delete" aria-hidden="true">
+										<div class="modal-dialog modal-sm">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Sair</span></button>
+												</div>
+												<div class="modal-body">
+													<p>Tem certeza que deseja remover essa turma?</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+													<button type="button.btn.btn-danger">Sim</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+					<div class="text-center">
+						<ul class="pagination pagination-large">
+							<li class="disabled"><a href="#">&laquo;</a></li>
+							<li class="active"><a href="#">1</a></li>
+							<li><a href="#">2</a></li>
+							<li><a href="#">&raquo;</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+	<footer class="navbar navbar-inverse navbar-fixed-bottom">
+		<div class="copyright">
+			<div class="container container-fluid">
+				<div class="row">
+					<div class="col-md-12">
+						<p>&copy; Todos os direitos reservados</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="../js/jquery.min.js"></script>
+	<script src="../js/jquery-searchable.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+
+	<script>
+		$(function() {
+			$( '#table' ).searchable({
+				searchField: '#container-search',
+			})
+		})
+	</script>
 </body>
 </html>

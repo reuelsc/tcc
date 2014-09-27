@@ -16,7 +16,6 @@
 	<![endif]-->
 </head>
 <body>
-
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container container-fluid">
 			<div class="navbar-header">
@@ -35,6 +34,7 @@
 					<li><a href="../secretaria/alunos.php">Alunos</a></li>
 					<li><a href="../secretaria/turmas.php">Turmas</a></li>
 					<li><a href="../secretaria/disciplinas.php">Disciplinas</a></li>
+					<li><a href="../secretaria/cursos.php">Cursos</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">

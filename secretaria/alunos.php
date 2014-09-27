@@ -35,6 +35,7 @@
 					<li class="active"><a href="../secretaria/alunos.php">Alunos</a></li>
 					<li><a href="../secretaria/turmas.php">Turmas</a></li>
 					<li><a href="../secretaria/disciplinas.php">Disciplinas</a></li>
+					<li><a href="../secretaria/cursos.php">Cursos</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
@@ -184,7 +185,7 @@
 	</footer>
 	
 	<script src="../js/jquery.min.js"></script>
-	<script src="//rawgithub.com/stidges/jquery-searchable/master/dist/jquery.searchable-1.0.0.min.js"></script>
+	<script src="../js/jquery-searchable.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 
 	<script>
