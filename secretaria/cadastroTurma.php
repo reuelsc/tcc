@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+secretariatml>
 <html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
@@ -9,7 +9,7 @@
 
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
 	<link href="../css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="../css/datepicker.css">
+	<link rel="stylesheet" href="../css/bootstrap-datetimepicker.min.css">
 
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -36,14 +36,14 @@
 					<li><a href="../secretaria/alunos.php">Alunos</a></li>
 					<li><a href="../secretaria/turmas.php">Turmas</a></li>
 					<li><a href="../secretaria/disciplinas.php">Disciplinas</a></li>
-					<li><a href="../secretaria/cursos.php">Cursos</a></li>
+					<li><a href="../secretaria/usuarios.php">Usuários</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Usuário <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Editar Perfil</a></li>
+							<li><a href="../alterarSenha.php"><span class="glyphicon glyphicon-cog"></span> Alterar Senha</a></li>
 							<li class="divider"></li>
 							<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Sair</a></li>
 						</ul>
@@ -61,77 +61,17 @@
 						<h3><span class="glyphicon glyphicon-th-list"></span> Cadastro de Turma</h3>
 					</div>
 
-					<form action="" class="form-inline" role="form">
-						<div class="row">
-							<div class="col-md-8">
-								<div class="form-group">
-									<label for="inputName" class="control-label">Nome:</label>
-									<input type="text" class="form-control" id="inputName">
-								</div>
-
-								<div class="form-group">
-									<label for="data" class="control-label">Data:</label>
-									<input type="date" class="form-control" id="inputData">
-								</div>
-
-								<div class="form-group">
-									<label for="hora" class="control-label">Hora:</label>
-									<input type="time" class="form-control" id="inputHora">
-								</div>
-							</div>
-						</div>
-					</form>
-
-					<!--<form method="post" action="" class="form-horizontal" role="form">
-						<div class="row">
-							<div class="col-md-8">
-								<div class="form-group">
-									<label for="inputName" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Nome:</label>
-									<div class="col-xs-6 col-sm-5 col-md-7 col-lg-5">
+					<form method="post" action="" class="form-horizontal" role="form">
+						<div class="form-group">
+							<div class="col-md-12">
+								<div class="form-group row">
+									<label for="inputName" class="col-md-1 control-label">Nome:</label>
+									<div class="col-md-4">
 										<input type="text" class="form-control" id="inputName" required>
 									</div>
-								</div>
 
-								<div class="form-group">
-									<label for="Date" class="col-xs-3 col-sm-1 col-md-1 col-lg-2 control-label">Data:</label>
-									<div class="col-xs-6 col-xs-offset-3 col-sm-5 col-sm-offset-6 col-md-7 col-md-offset-4 col-lg-5 col-lg-offset-5">
-										<div class="input-group date">
-											<input type="text" class="form-control" id="calendar">
-											<span class="input-group-addon">
-												<i class="glyphicon glyphicon-calendar"></i>
-											</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label for="Hora" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Hora:</label>
-									<div class="col-xs-6 col-xs-offset-3 col-sm-5 col-sm-offset-6 col-md-7 col-md-offset-4 col-lg-5 col-lg-offset-5">
-										<div class="input-group time">
-											<input type="text" class="form-control" />
-											<span class="input-group-addon">
-												<span class="glyphicon glyphicon-time"></span>
-											</span>
-										</div>
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label for="inputProf" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Professor:</label>
-									<div class="col-xs-6 col-sm-5 col-md-7 col-lg-5">
-										<select name="selectProf" id="selectProf" class="form-control" required>
-											<option></option>
-											<option>Guilherme Costa</option>
-											<option>Fernando Gonçalves</option>
-											<option>Wesley Tschiedel</option>
-											<option>Welton Dias</option>
-										</select>
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label for="selectDependencia" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Dependência:</label>
-									<div class="col-xs-6 col-sm-5 col-md-7 col-lg-5">
+									<label for="selectDependencia" class="col-md-1 control-label">Dependência:</label>
+									<div class="col-md-1">
 										<select name="selectDependencia" id="selectDependencia" class="form-control" required>
 											<option value=""></option>
 											<option value="rdr">RDR</option>
@@ -141,12 +81,63 @@
 											<option value="ster">STER</option>
 										</select>
 									</div>
+
+									<label for="selectActive" class="col-md-1 control-label">Ativo:</label>
+									<div class="col-md-2">
+										<select name="active" id="active" class="form-control">
+											<option>Sim</option>
+											<option>Não</option>
+										</select>
+									</div>
 								</div>
 
-								<div class="form-group">
-									<label for="selectDisciplina" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Disciplina:</label>
-									<div class="col-xs-6 col-sm-5 col-md-7 col-lg-5">
-										<select name="selectDisciplina" id="selectDisciplina" class="form-control">
+								<div class="form-group row">
+									<label for="dateBegin" class="col-md-1 control-label">Data Inicial:</label>
+									<div class="col-md-2">
+										<div class="input-group date">
+											<input type="date" class="form-control">
+											<span class="input-group-addon">
+												<i class="glyphicon glyphicon-calendar"></i>
+											</span>
+										</div>
+									</div>
+
+									<label for="dateEnd" class="col-md-1 control-label">Data Final:</label>
+									<div class="col-md-2">
+										<div class="input-group date">
+											<input type="date" class="form-control">
+											<span class="input-group-addon">
+												<i class="glyphicon glyphicon-calendar"></i>
+											</span>
+										</div>
+									</div>
+
+									<label for="Hora" class="col-md-1 control-label">Hora:</label>
+									<div class="col-md-2">
+										<div class="input-group time">
+											<input type="text" class="form-control" />
+											<span class="input-group-addon">
+												<span class="glyphicon glyphicon-time"></span>
+											</span>
+										</div>
+									</div>
+								</div>
+
+								<div class="form-group row">
+									<label for="inputProf" class="col-md-1 control-label">Professor:</label>
+									<div class="col-md-3">
+										<select name="selectProf" id="selectProf" class="form-control" required>
+											<option></option>
+											<option>Guilherme Costa</option>
+											<option>Fernando Gonçalves</option>
+											<option>Wesley Tschiedel</option>
+											<option>Welton Dias</option>
+										</select>
+									</div>
+
+									<label for="selectDisciplina" class="col-md-1 control-label">Disiciplina:</label>
+									<div class="col-md-3">
+										<select name="selectHabilitado" id="selectHabilitado" class="form-control">
 											<option value=""></option>
 											<option value="prog-estruturada">Programação Estruturada</option>
 											<option value="poo">Programaçaõ Orientada a Objetos</option>
@@ -157,8 +148,8 @@
 									</div>
 								</div>
 
-								<div class="pull-right">
-									<button type="button" class="btn btn-success" data-toggle="modal" data-target="#user-success">Cadastrar</button>
+								<div class="col-md-offset-8">
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#user-success">Cadastrar</button>
 										<div class="modal fade" id="user-success" tabindex="-1" role="dialog" aria-labelledby="user-success" aria-hidden="true">
 											<div class="modal-dialog modal">
 												<div class="modal-content">
@@ -174,11 +165,11 @@
 												</div>
 											</div>
 										</div>
-									<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-warning">Cancelar</button></a>
+									<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-primary">Cancelar</button></a>
 								</div>
 							</div>
 						</div>
-					</form>-->
+					</form>
 				</div>
 			</div>
 		</div>
@@ -197,18 +188,7 @@
 	</footer>
 
 	<script src="../js/jquery.min.js"></script>
-	<script src="../js/bootstrap-datepicker.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
-
-	<script>
-		$(document).reaady(function() {
-			$('#calendar').datepicker({
-				format: "dd/mm/yyyy",
-				language: "pt-BR",
-				autoclose: true,
-				multidate: true,
-			});
-		});
-	</script>
+	<script src="../js/bootstrap-datetimepicker.min.js"></script>
 </body>
 </html>

@@ -25,7 +25,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<img src="img/logomarca.jpg" alt="SAD" width="100" height="50">
+				<a href="#" class="navbar-brand">{Logo}</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="navbar-collapse">

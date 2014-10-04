@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -41,7 +41,7 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Usuário <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Editar Perfil</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Alterar Senha</a></li>
 							<li class="divider"></li>
 							<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Sair</a></li>
 						</ul>
@@ -69,7 +69,7 @@
 
 					<div class="row">
 						<div class="col-lg-4">
-							<input type="search" id="container-search" class="form-control" placeholder="Search...">
+							<input type="search" id="container-search" class="form-control" placeholder="Pesquisar...">
 						</div>
 					</div>
 
@@ -90,23 +90,7 @@
 									<td></td>
 									<td></td>
 									<td></td>
-									<td><button type="button" class="btn btn-warning btn-xs">Editar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
-									<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="modal-delete" aria-hidden="true">
-										<div class="modal-dialog modal-sm">
-											<div class="modal-content">
-												<div class="modal-header">
-													<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Sair</span></button>
-												</div>
-												<div class="modal-body">
-													<p>Tem certeza que deseja remover essa turma?</p>
-												</div>
-												<div class="modal-footer">
-													<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
-													<button type="button.btn.btn-danger">Sim</button>
-												</div>
-											</div>
-										</div>
-									</div>
+									<td><button type="button" class="btn btn-warning btn-xs">Editar</button>
 								</tr>
 							</tbody>
 						</table>

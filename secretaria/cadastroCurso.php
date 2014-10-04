@@ -60,40 +60,39 @@
 					</div>
 
 					<form method="post" action="" class="form-horizontal" role="form">
-						<div class="row">
-							<div class="col-md-8">
-								<div class="form-group">
-									<label for="inputNome" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Nome:</label>
-									<div class="col-xs-6 col-sm-5 col-md-7 col-lg-5">
+						<div class="form-group">
+							<div class="col-md-12">
+								<div class="form-group row">
+									<label for="inputNome" class="col-md-1 control-label">Nome:</label>
+									<div class="col-md-3">
 										<input type="text" class="form-control" id="inputNome" required>
 									</div>
-								</div>
 
-								<div class="form-group">
-									<label for="inputOrientador" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Orientador:</label>
-									<div class="col-xs-6 col-sm-5 col-md-7 col-lg-5">
-										<input type="text" class="form-control" id="inputOrientador" required>
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label for="selectTipo" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Tipo:</label>
-									<div class="col-xs-6 col-sm-5 col-md-7 col-lg-5">
+									<label for="selectTipo" class="col-md-1 control-label">Tipo:</label>
+									<div class="col-md-2">
 										<select name="selectTipo" id="selectTipo" class="form-control" required>
 											<option value=""></option>
+											<option value="">Presencial</option>
+											<option value="">Semipresencial</option>
+											<option value="">EaD</option>
 										</select>
 									</div>
 								</div>
 
-								<div class="form-group">
-									<label for="numberCarga" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Carga Horária:</label>
-									<div class="col-xs-6 col-sm-5 col-md-7 col-lg-5">
+								<div class="form-group row">
+									<label for="inputOrientador" class="col-md-1 control-label">Orientador:</label>
+									<div class="col-md-3">
+										<input type="text" class="form-control" id="inputOrientador" required>
+									</div>
+
+									<label for="numberCH" class="col-md-1 control-label">Carga Horária:</label>
+									<div class="col-md-2">
 										<input type="number" class="form-control" id="inputCarga" required>
 									</div>
 								</div>
 
-								<div class="pull-right">
-									<button type="button" class="btn btn-success" data-toggle="modal" data-target="#user-success">Cadastrar</button>
+								<div class="col-md-offset-5">
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#user-success">Cadastrar</button>
 										<div class="modal fade" id="user-success" tabindex="-1" role="dialog" aria-labelledby="user-success" aria-hidden="true">
 											<div class="modal-dialog modal">
 												<div class="modal-content">
@@ -109,7 +108,7 @@
 												</div>
 											</div>
 										</div>
-									<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-warning">Cancelar</button></a>
+									<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-primary">Cancelar</button></a>
 								</div>
 							</div>
 						</div>

@@ -10,7 +10,7 @@
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
 	<link href="../css/style.css" rel="stylesheet">
 
-		<!--[if lt IE 9]>
+	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 	<![endif]-->
@@ -42,7 +42,7 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Usuário <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Editar Perfil</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Alterar Senha</a></li>
 							<li class="divider"></li>
 							<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Sair</a></li>
 						</ul>
@@ -52,7 +52,7 @@
 		</div>
 	</div>
 
-		<div class="wrapper" role="main">
+	<div class="wrapper" role="main">
 		<div class="container-fluid container">
 			<div class="row">
 				<div id="conteudo" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
@@ -62,22 +62,82 @@
 
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<a href="../coordenador/cadastroAluno.php"><button type="button" class="btn btn-success">Novo Aluno</button></a>
+							<a href="../secretaria/cadastroAluno.php"><button type="button" class="btn btn-success">Novo Aluno</button></a>
 						</div>
 					</div>
 
-					<div class="table table-responsive">
-						<table class="table table-striped">
+					<hr>
+
+					<div class="row">
+						<div class="col-lg-4">
+							<input type="search" id="container-search" class="form-control" placeholder="Pesquisar...">
+						</div>
+					</div>
+
+					<div class="table-responsive" id="table">
+						<table class="table bordered">
 							<thead class="h4">
 								<tr>
-									<th>Nome <span id="pesquisa" style="color:black; cursor:pointer;"><span class="glyphicon glyphicon-search"></span></span></th>
-									<th>Ação</th>
+									<th>Nome</th>
+									<th>RA</th>
+									<th>Disciplina</th>
+									<th></th>
 								</tr>
 							</thead>
 							<tbody class="h5">
 								<tr>
 									<td>Reuel Scarabele Cardoso</td>
-									<td><button type="button" class="btn btn-warning btn-xs">Editar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
+									<td>1158387827</td>
+									<td>Trabalho de Conclusão de Curso II</td>
+									<td><button type="button" class="btn btn-warning btn-xs">Alterar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
+									<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="modal-delete" aria-hidden="true">
+										<div class="modal-dialog modal-sm">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Sair</span></button>
+												</div>
+												<div class="modal-body">
+													<p>Tem certeza que deseja remover esse aluno?</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+													<button type="button" class="btn btn-danger">Sim</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</tr>
+							</tbody>
+							<tbody class="h5">
+								<tr>
+									<td>Fernando de Jesus Ribeiro</td>
+									<td>2547450767</td>
+									<td>Trabalho de Conclusão de Curso II</td>
+									<td><button type="button" class="btn btn-warning btn-xs">Alterar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
+									<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="modal-delete" aria-hidden="true">
+										<div class="modal-dialog modal-sm">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Sair</span></button>
+												</div>
+												<div class="modal-body">
+													<p>Tem certeza que deseja remover esse aluno?</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-default" data-dismiss="modal">Não</button>
+													<button type="button" class="btn btn-danger">Sim</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</tr>
+							</tbody>
+							<tbody class="h5">
+								<tr>
+									<td>Thiago Couto Godoy</td>
+									<td>1183386900</td>
+									<td>Trabalho de Conclusão de Curso II</td>
+									<td><button type="button" class="btn btn-warning btn-xs">Alterar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
 									<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="modal-delete" aria-hidden="true">
 										<div class="modal-dialog modal-sm">
 											<div class="modal-content">
@@ -112,7 +172,7 @@
 		</div>
 	</div>
 
-	<footer class="navbar navbar-inverse navbar-fixed-bottom">
+	<footer>
 		<div class="copyright">
 			<div class="container container-fluid">
 			  <div class="row">
@@ -125,15 +185,14 @@
 	</footer>
 	
 	<script src="../js/jquery.min.js"></script>
+	<script src="../js/jquery-searchable.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 
 	<script>
-		$('#pesquisa').popover({
-			container: 'body',
-			html: true,
-			template: '<div class="popover"><div class="arrow"></div><div class="popover-content"></div></div>',
-			content: '<div class="input-group"><input type="text" class="form-control" /><span class="input-group-btn"><button class="btn btn-danger" type="button"><span class="glyphicon glyphicon-remove"></span></button></span></div><span class="glyphicon glyphicon-remove-sign" style="display: none;"></span>',
-			placement: 'right',
+		$(function() {
+			$( '#table' ).searchable({
+				searchField: '#container-search',
+			})
 		});
 	</script>
 </body>

@@ -25,7 +25,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<img src="img/logomarca.jpg" alt="SAD" width="100" height="50">
+				<a href="#" class="navbar-brand">{Logo}</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="navbar-collapse">
@@ -36,7 +36,7 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Usuário <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Editar Perfil</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Alterar Senha</a></li>
 							<li class="divider"></li>
 							<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Sair</a></li>
 						</ul>

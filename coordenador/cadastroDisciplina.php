@@ -42,7 +42,7 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Usuário <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Editar Perfil</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Alterar Senha</a></li>
 							<li class="divider"></li>
 							<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Sair</a></li>
 						</ul>
@@ -61,39 +61,30 @@
 					</div>
 
 					<form method="post" action="" class="form-horizontal" role="form">
-						<div class="row">
-							<div class="col-md-8">
-								<div class="form-group">
-									<label for="inputCod" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Código Disciplina:</label>
-									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
-										<input type="text" class="form-control" id="inputCod" required>
+						<div class="form-group">
+							<div class="col-md-12">
+								<div class="form-group row">
+									<label for="inputCod" class="col-md-1 control-label">Código Disciplina:</label>
+									<div class="col-md-2">
+										<input type="text" class="form-control" id="inputCod" disabled required>
 									</div>
-								</div>
 
-								<div class="form-group">
-									<label for="inputDisciplina" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Disciplina:</label>
-									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
+									<label for="inputName" class="col-md-1 control-label">Nome:</label>
+									<div class="col-md-3">
 										<input type="text" class="form-control" id="inputDisciplina" required>
 									</div>
-								</div>
 
-								<div class="form-group">
-									<label for="inputCarga" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Carga Horária:</label>
-									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
-										<input type="text" class="form-control" id="inputCarga" required>
+									<label for="inputCH" class="col-md-1 control-label">Carga Horária:</label>
+									<div class="col-md-1">
+										<input type="text" class="form-control" id="inputCH" required>
 									</div>
 								</div>
 
-								<div class="form-group">
-									<label for="inputPeriodo" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Período Letivo:</label>
-									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
-										<input type="text" class="form-control" id="inputPeriodo" required>
-									</div>
-								</div>
+								<div class="clearfix"></div>
 
-								<div class="form-group">
-									<label for="selectSerie" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Série:</label>
-									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
+								<div class="form-group row">
+									<label for="selectSemestre" class="col-md-1 control-label">Semestre:</label>
+									<div class="col-md-1">
 										<select name="selectSerie" id="selectSerie" class="form-control" required>
 											<option value=""></option>
 											<option value="1">1º</option>
@@ -104,14 +95,20 @@
 											<option value="6">6º</option>
 											<option value="7">7º</option>
 											<option value="8">8º</option>
-											<option value="9">9º</option>
 										</select>
 									</div>
-								</div>
 
-								<div class="form-group">
-									<label for="selectDependencia" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Dependência:</label>
-									<div class="col-xs-6-col-sm-10 col-md-11 col-lg-10">
+									<label for="inputPeriodo" class="col-md-1 control-label">Período Letivo:</label>
+									<div class="col-md-1">
+										<select name="periodo" id="selectPeriodo" class="form-control" required>
+											<option value=""></option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+										</select>
+									</div>
+
+									<label for="selectDependencia" class="col-md-1 control-label">Dependência:</label>
+									<div class="col-md-2">
 										<select name="selectDependencia" id="selectDependencia" class="form-control" required>
 											<option value=""></option>
 											<option value="rdr">RDR</option>
@@ -123,9 +120,9 @@
 									</div>
 								</div>
 
-								<div class="form-group">
-									<label for="inputProfessor" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Professor:</label>
-									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
+								<div class="form-group row">
+									<label for="inputProfessor" class="col-md-1 control-label">Professor:</label>
+									<div class="col-md-3">
 										<select name="selectProfessor" id="selectProfessor" class="form-control" required>
 											<option></option>
 											<option>Guilherme Costa</option>
@@ -136,8 +133,8 @@
 									</div>
 								</div>
 
-								<div class="pull-right">
-									<button type="button" class="btn btn-success" data-toggle="modal" data-target="#user-success">Cadastrar</button>
+								<div class="col-md-offset-7">
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#user-success">Cadastrar</button>
 										<div class="modal fade" id="user-success" tabindex="-1" role="dialog" aria-labelledby="user-success" aria-hidden="true">
 											<div class="modal-dialog modal">
 												<div class="modal-content">
@@ -153,7 +150,7 @@
 												</div>
 											</div>
 										</div>
-									<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-warning">Cancelar</button></a>
+									<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-primary">Cancelar</button></a>
 								</div>
 							</div>
 						</div>

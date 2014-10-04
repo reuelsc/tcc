@@ -42,7 +42,7 @@
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Usuário <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Editar Perfil</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Alterar Senha</a></li>
 							<li class="divider"></li>
 							<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Sair</a></li>
 						</ul>
@@ -62,7 +62,15 @@
 
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<a href="../coordenador/cadastroTurma.php"><button type="button" class="btn btn-success">Nova Turma</button></a>
+							<a href="../secretaria/cadastroTurma.php"><button type="button" class="btn btn-success">Nova Turma</button></a>
+						</div>
+					</div>
+
+					<hr>
+
+					<div class="row">
+						<div class="col-lg-4">
+							<input type="search" id="container-search" class="form-control" placeholder="Pesquisar...">
 						</div>
 					</div>
 
@@ -70,15 +78,17 @@
 						<table class="table table-striped bordered">
 							<thead class="h4">
 								<tr>
-									<th>Nome <span id="pesquisa" style="color:black; cursor:pointer;"><span class="glyphicon glyphicon-search"></span></span></th>
+									<th>Turma</th>
+									<th>Disciplina</th>
 									<th>Professor</th>
 									<th>Turma Ativa</th>
-									<th>Ação</th>
+									<th></th>
 								</tr>
 							</thead>
 							<tbody class="h5">
 								<tr>
 									<td>Turma TCC</td>
+									<td></td>
 									<td>Guilherme Parente Costa</td>
 									<td>Sim</td>
 									<td><button type="button" class="btn btn-warning btn-xs">Editar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
@@ -129,15 +139,14 @@
 	</footer>
 	
 	<script src="../js/jquery.min.js"></script>
+	<script src="../js/jquery-searchable.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
 
 	<script>
-		$('#pesquisa').popover({
-			container: 'body',
-			html: true,
-			template: '<div class="popover"><div class="arrow"></div><div class="popover-content"></div></div>',
-			content: '<div class="input-group"><input type="text" class="form-control" /><span class="input-group-btn"><button class="btn btn-danger" type="button"><span class="glyphicon glyphicon-remove"></span></button></span></div><span class="glyphicon glyphicon-remove-sign" style="display: none;"></span>',
-			placement: 'right',
+		$(function() {
+			$( '#table' ).searchable({
+				searchField: '#container-search',
+			})
 		});
 	</script>
 </body>

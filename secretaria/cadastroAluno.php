@@ -35,14 +35,14 @@
 					<li><a href="../secretaria/alunos.php">Alunos</a></li>
 					<li><a href="../secretaria/turmas.php">Turmas</a></li>
 					<li><a href="../secretaria/disciplinas.php">Disciplinas</a></li>
-					<li><a href="../secretaria/cursos.php">Cursos</a></li>
+					<li><a href="../secretaria/usuarios.php">Usuários</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> Usuário <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Editar Perfil</a></li>
+							<li><a href="#"><span class="glyphicon glyphicon-cog"></span> Alterar Senha</a></li>
 							<li class="divider"></li>
 							<li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Sair</a></li>
 						</ul>
@@ -61,25 +61,23 @@
 					</div>
 
 					<form method="post" action="" class="form-horizontal" role="form">
-						<div class="row">
-							<div class="col-md-8">
-								<div class="form-group">
-									<label for="inputName" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Nome:</label>
-									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
+						<div class="form-group">
+							<div class="col-md-12">
+								<div class="form-group row">
+									<label for="inputRa" class="col-md-1 control-label">RA:</label>
+									<div class="col-md-2">
+										<input type="text" class="form-control" id="inputRa" required>
+									</div>
+
+									<label for="inputName" class="col-md-1 control-label">Nome:</label>
+									<div class="col-md-5">
 										<input type="text" class="form-control" id="inputName" required>
 									</div>
 								</div>
 
-								<div class="form-group">
-									<label for="inputMat" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Matrícula:</label>
-									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
-										<input type="text" class="form-control" id="inputMat" required>
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label for="selectCurso" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Curso:</label>
-									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
+								<div class="form-group row">
+									<label for="selectCurso" class="col-md-1 control-label">Curso:</label>
+									<div class="col-md-3">
 										<select name="selectCurso" id="selectCurso" class="form-control" required>
 											<option value=""></option>
 											<option value="prog-estruturada">Programação Estruturada</option>
@@ -95,11 +93,9 @@
 											<option value="xml">XML</option>
 										</select>
 									</div>
-								</div>
 
-								<div class="form-group">
-									<label for="selectDependencia" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Dependência:</label>
-									<div class="col-xs-6-col-sm-10 col-md-11 col-lg-10">
+									<label for="selectDependencia" class="col-md-1 control-label">Dependência:</label>
+									<div class="col-md-2">
 										<select name="selectDependencia" id="selectDependencia" class="form-control" required>
 											<option value=""></option>
 											<option value="rdr">RDR</option>
@@ -109,11 +105,9 @@
 											<option value="ster">STER</option>
 										</select>
 									</div>
-								</div>
 
-								<div class="form-group">
-									<label for="selectSemestre" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Semestre:</label>
-									<div class="col-xs-6 col-sm-10 col-sm-11 col-lg-10">
+									<label for="selectSemestre" class="col-md-1 control-label">Semestre:</label>
+									<div class="col-md-1">
 										<select name="selectSemestre" id="selectSemestre" class="form-control" required>
 											<option value=""></option>
 											<option value="1">1º</option>
@@ -124,63 +118,56 @@
 											<option value="6">6º</option>
 											<option value="7">7º</option>
 											<option value="8">8º</option>
-											<option value="9">9º</option>
 										</select>
 									</div>
 								</div>
 
-								<div class="form-group">
-									<label for="inputPhone" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Telefone:</label>
-									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
-										<input type="text" class="form-control" id="inputPhone" required>
+								<div class="form-group row">
+									<label for="inputPhone" class="col-md-1 control-label">Telefone:</label>
+									<div class="col-md-2">
+										<input type="phone" class="form-control" id="inputPhone" required>
+									</div>
+
+									<label for="inputEmail" class="col-md-1 control-label">Email:</label>
+									<div class="col-md-3">
+										<input type="email" class="form-control" id="inputEmail">
 									</div>
 								</div>
 
-								<div class="form-group">
-									<label for="radioSexo" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Sexo:</label>
-									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
-										<label class="btn btn-primary">
-											<input type="radio" name="optionSexo" id="optionMasculino" value="masculino"> Masculino
-										</label>
-											
-										<label class="btn btn-primary">
-											<input type="radio" name="optionSexo" id="optionFeminino" value="feminino"> Feminino
-										</label>
+								<div class="form-group row">
+									<label for="inputNasc" class="col-md-1 control-label">Nascimento:</label>
+									<div class="col-md-2">
+										<input type="date" class="form-control" id="inputNac" required>
+									</div>
+
+									<label for="sexo" class="col-md-1 control-label">Sexo:</label>
+									<div class="col-md-2">
+										<select name="sexo" class="form-control">
+											<option value=""></option>
+											<option value="feminino">Feminino</option>
+											<option value="masculino">Masculino</option>
+										</select>
 									</div>
 								</div>
 
-								<div class="form-group">
-									<label for="inputNasc" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Nascimento:</label>
-									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
-										<input type="text" class="form-control" id="inputNac" required>
-									</div>
-								</div>
-
-								<div class="form-group">
-									<label for="inputEmail" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Email:</label>
-									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-10">
-										<input type="text" class="form-control" id="inputEmail">
-									</div>
-								</div>
-
-								<div class="pull-right">
-									<button type="button" class="btn btn-success" data-toggle="modal" data-target="#user-success">Cadastrar</button>
-										<div class="modal fade" id="user-success" tabindex="-1" role="dialog" aria-labelledby="user-success" aria-hidden="true">
-											<div class="modal-dialog modal">
-												<div class="modal-content">
-													<div class="modal-header">
-														<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Sair</span></button>
-													</div>
-													<div class="modal-body">
-														<p>Usuário cadastrado com sucesso!</p>
-													</div>
-													<div class="modal-footer">
-														<button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
-													</div>
+								<div class="col-md-offset-7">
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#user-success">Cadastrar</button>
+									<div class="modal fade" id="user-success" tabindex="-1" role="dialog" aria-labelledby="user-success" aria-hidden="true">
+										<div class="modal-dialog modal">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Sair</span></button>
+												</div>
+												<div class="modal-body">
+													<p>Usuário cadastrado com sucesso!</p>
+												</div>
+												<div class="modal-footer">
+													<button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
 												</div>
 											</div>
 										</div>
-									<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-warning">Cancelar</button></a>
+									</div>
+									<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-primary">Cancelar</button></a>
 								</div>
 							</div>
 						</div>
@@ -189,15 +176,13 @@
 			</div>
 		</div>
 	</div>
-
-	<footer>
-		<div class="copyright navbar navbar-inverse">
-			<div class="container container-fluid">
-			  <div class="row">
+	
+	<footer class="copyright">
+		<div class="container container-fluid">
+			<div class="row">
 				<div class="col-md-12">
-				  <p>&copy; Todos os direitos reservados</p>
+					<p>&copy; Todos os direitos reservados</p>
 				</div>
-			  </div>
 			</div>
 		</div>
 	</footer>

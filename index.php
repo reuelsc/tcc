@@ -8,6 +8,7 @@
 
 	<title>SAD - Login</title>
 
+	<link href="css/bootstrap.css" rel="stylesheet">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 
@@ -18,10 +19,11 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-inverse" role="navigation">
+	<nav class="navbar navbar-default" role="navigation">
 		<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container container-fluid">
 				<div class="navbar-header">
+					<!-- <a href="#" class="navbar-brand">{Logo}</a> -->
 					<a href="#" class="navbar-brand">{Logo}</a>
 				</div>
 			</div>
