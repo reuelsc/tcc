@@ -40,12 +40,23 @@
 			<div class="row">
 				<div id="conteudo" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<div class="page-header">
-						<h3><span class="glyphicon glyphicon-th-list"></span> Esqueceu a Senha</h3>
+						<h3><span class="glyphicon glyphicon-lock"></span> Esqueceu a Senha</h3>
 					</div>
 
 					<form method="post" action="" class="form-horizontal" role="form">
 						<div class="row">
 							<div class="col-md-8">
+								<div class="form-group">
+									<label for="user" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">CPF:</label>
+									<div class="col-xs-6 col-sm-5 col-md-7 col-lg-5">
+										<div class="input-group">
+											<span class="input-group-addon">
+												<i class="glyphicon glyphicon-user"></i>
+											</span>
+											<input type="cpf" class="form-control">
+										</div>
+									</div>
+								</div>
 								<div class="form-group">
 									<label for="inputpass" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Nova Senha:</label>
 									<div class="col-xs-6 col-sm-5 col-md-7 col-lg-5">
@@ -71,7 +82,7 @@
 								</div>
 								<div class="col-md-7">
 									<div class="pull-right">
-										<button type="button" class="btn btn-success" data-toggle="modal" data-target="#reset-pass">Alterar</button>
+										<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#reset-pass">Alterar</button>
 										<div class="modal fade" id="reset-pass" tabindex="-1" role="dialog" aria-labelledby="reset-pass" aria-hidden="true">
 											<div class="modal-dialog modal">
 												<div class="modal-content">
@@ -87,7 +98,7 @@
 												</div>
 											</div>
 										</div>
-										<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-warning">Cancelar</button></a>
+										<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-primary">Cancelar</button></a>
 									</div>
 								</div>
 							</div>
