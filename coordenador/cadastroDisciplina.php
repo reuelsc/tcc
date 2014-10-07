@@ -35,6 +35,7 @@
 					<li><a href="../coordenador/alunos.php">Alunos</a></li>
 					<li><a href="../coordenador/turmas.php">Turmas</a></li>
 					<li><a href="../coordenador/disciplinas.php">Disciplinas</a></li>
+					<li><a href="../coordenador/cursos.php">Cursos</a></li>
 					<li><a href="../coordenador/usuarios.php">Usuários</a></li>
 				</ul>
 

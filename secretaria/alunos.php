@@ -89,7 +89,7 @@
 									<td>Reuel Scarabele Cardoso</td>
 									<td>1158387827</td>
 									<td>Trabalho de Conclusão de Curso II</td>
-									<td><button type="button" class="btn btn-warning btn-xs">Alterar</button>
+									<td><a href="../secretaria/editarAluno.php" type="button" class="btn btn-warning btn-xs">Editar</a>
 								</tr>
 							</tbody>
 							<tbody class="h5">
@@ -97,7 +97,7 @@
 									<td>Fernando de Jesus Ribeiro</td>
 									<td>2547450767</td>
 									<td>Trabalho de Conclusão de Curso II</td>
-									<td><button type="button" class="btn btn-warning btn-xs">Alterar</button>
+									<td><a href="../secretaria/editarAluno.php" type="button" class="btn btn-warning btn-xs">Editar</a>
 								</tr>
 							</tbody>
 							<tbody class="h5">
@@ -105,7 +105,7 @@
 									<td>Thiago Couto Godoy</td>
 									<td>1183386900</td>
 									<td>Trabalho de Conclusão de Curso II</td>
-									<td><button type="button" class="btn btn-warning btn-xs">Alterar</button>
+									<td><a href="../secretaria/editarAluno.php" type="button" class="btn btn-warning btn-xs">Editar</a>
 								</tr>
 							</tbody>
 						</table>

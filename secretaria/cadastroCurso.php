@@ -100,7 +100,7 @@
 														<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Sair</span></button>
 													</div>
 													<div class="modal-body">
-														<p>Usuário cadastrado com sucesso!</p>
+														<p>Curso cadastrado com sucesso!</p>
 													</div>
 													<div class="modal-footer">
 														<button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>

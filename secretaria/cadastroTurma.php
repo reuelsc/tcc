@@ -36,7 +36,7 @@ secretariatml>
 					<li><a href="../secretaria/alunos.php">Alunos</a></li>
 					<li><a href="../secretaria/turmas.php">Turmas</a></li>
 					<li><a href="../secretaria/disciplinas.php">Disciplinas</a></li>
-					<li><a href="../secretaria/usuarios.php">Usuários</a></li>
+					<li><a href="../secretaria/cursos.php">Cursos</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
@@ -163,7 +163,7 @@ secretariatml>
 														<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Sair</span></button>
 													</div>
 													<div class="modal-body">
-														<p>Usuário cadastrado com sucesso!</p>
+														<p>Turma cadastrada com sucesso!</p>
 													</div>
 													<div class="modal-footer">
 														<button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>

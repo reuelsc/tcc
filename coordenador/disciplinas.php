@@ -34,6 +34,7 @@
 					<li><a href="../coordenador/alunos.php">Alunos</a></li>
 					<li><a href="../coordenador/turmas.php">Turmas</a></li>
 					<li class="active"><a href="../coordenador/disciplinas.php">Disciplinas</a></li>
+					<li><a href="../coordenador/cursos.php">Cursos</a></li>
 					<li><a href="../coordenador/usuarios.php">Usuários</a></li>
 				</ul>
 
@@ -90,7 +91,7 @@
 									<td>Trabalho de Conclusão de Curso II</td>
 									<td>Guilherme Parente Costa</td>
 									<td>Ativa</td>
-									<td><button type="button" class="btn btn-warning btn-xs">Editar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
+									<td><a href="../coordenador/editarDisciplina.php" type="button" class="btn btn-warning btn-xs">Editar</a> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
 									<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="modal-delete" aria-hidden="true">
 										<div class="modal-dialog modal-sm">
 											<div class="modal-content">

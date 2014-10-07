@@ -5,7 +5,7 @@ secretariatml>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>Cadastro de Aluno</title>
+	<title>Cadastro de Disciplina</title>
 
 	<link href="../css/bootstrap.min.css" rel="stylesheet">
 	<link href="../css/style.css" rel="stylesheet">
@@ -35,7 +35,7 @@ secretariatml>
 					<li><a href="../secretaria/alunos.php">Alunos</a></li>
 					<li><a href="../secretaria/turmas.php">Turmas</a></li>
 					<li><a href="../secretaria/disciplinas.php">Disciplinas</a></li>
-					<li><a href="../secretaria/usuarios.php">Usuários</a></li>
+					<li><a href="../secretaria/cursos.php">Cursos</a></li>
 				</ul>
 
 				<ul class="nav navbar-nav navbar-right">
@@ -64,11 +64,6 @@ secretariatml>
 						<div class="form-group">
 							<div class="col-md-12">
 								<div class="form-group row">
-									<label for="inputCod" class="col-md-1 control-label">Código Disciplina:</label>
-									<div class="col-md-2">
-										<input type="text" class="form-control" id="inputCod" disabled required>
-									</div>
-
 									<label for="inputName" class="col-md-1 control-label">Nome:</label>
 									<div class="col-md-3">
 										<input type="text" class="form-control" id="inputDisciplina" required>
@@ -142,7 +137,7 @@ secretariatml>
 														<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Sair</span></button>
 													</div>
 													<div class="modal-body">
-														<p>Usuário cadastrado com sucesso!</p>
+														<p>Disciplina cadastrada com sucesso!</p>
 													</div>
 													<div class="modal-footer">
 														<button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>

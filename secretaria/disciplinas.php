@@ -61,7 +61,7 @@
 
 					<div class="row">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-							<a href="../secretaria/cadastroTurma.php"><button type="button" class="btn btn-success">Nova Disciplina</button></a>
+							<a href="../secretaria/cadastroDisciplina.php"><button type="button" class="btn btn-success">Nova Disciplina</button></a>
 						</div>
 					</div>
 
@@ -90,7 +90,7 @@
 									<td>Trabalho de Conclusão de Curso II</td>
 									<td>Guilherme Parente Costa</td>
 									<td>Ativa</td>
-									<td><button type="button" class="btn btn-warning btn-xs">Editar</button>
+									<td><a href="../secretaria/editarDisciplina.php" type="button" class="btn btn-warning btn-xs">Editar</a>
 								</tr>
 							</tbody>
 						</table>

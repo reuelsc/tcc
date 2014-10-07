@@ -35,6 +35,7 @@
 					<li class="active"><a href="../coordenador/alunos.php">Alunos</a></li>
 					<li><a href="../coordenador/turmas.php">Turmas</a></li>
 					<li><a href="../coordenador/disciplinas.php">Disciplinas</a></li>
+					<li><a href="../coordenador/cursos.php">Cursos</a></li>
 					<li><a href="../coordenador/usuarios.php">Usuários</a></li>
 				</ul>
 
@@ -89,7 +90,7 @@
 									<td>Reuel Scarabele Cardoso</td>
 									<td>1158387827</td>
 									<td>Trabalho de Conclusão de Curso II</td>
-									<td><button type="button" class="btn btn-warning btn-xs">Alterar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
+									<td><a href="../coordenador/editarAluno.php" type="button" class="btn btn-warning btn-xs">Alterar</a> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
 									<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="modal-delete" aria-hidden="true">
 										<div class="modal-dialog modal-sm">
 											<div class="modal-content">
@@ -113,7 +114,7 @@
 									<td>Fernando de Jesus Ribeiro</td>
 									<td>2547450767</td>
 									<td>Trabalho de Conclusão de Curso II</td>
-									<td><button type="button" class="btn btn-warning btn-xs">Alterar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
+									<td><a href="../coordenador/editarAluno.php" type="button" class="btn btn-warning btn-xs">Alterar</a> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
 									<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="modal-delete" aria-hidden="true">
 										<div class="modal-dialog modal-sm">
 											<div class="modal-content">
@@ -137,7 +138,7 @@
 									<td>Thiago Couto Godoy</td>
 									<td>1183386900</td>
 									<td>Trabalho de Conclusão de Curso II</td>
-									<td><button type="button" class="btn btn-warning btn-xs">Alterar</button> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
+									<td><a href="../coordenador/editarAluno.php" type="button" class="btn btn-warning btn-xs">Alterar</a> <button type="button" class="btn btn-danger btn-xs" data-toggle="modal" data-target="#modal-delete">Excluir</button></td>
 									<div class="modal fade" id="modal-delete" tabindex="-1" role="dialog" aria-labelledby="modal-delete" aria-hidden="true">
 										<div class="modal-dialog modal-sm">
 											<div class="modal-content">
