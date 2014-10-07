@@ -67,7 +67,12 @@ secretariatml>
 								<div class="form-group row">
 									<label for="inputName" class="col-md-1 control-label">Nome:</label>
 									<div class="col-md-4">
-										<input type="text" class="form-control" id="inputName" required>
+										<div class="input-group">
+											<span class="input-group-addon">
+												<span class="glyphicon glyphicon-user"></span>
+											</span>
+											<input type="text" class="form-control" id="inputName" required>
+										</div>
 									</div>
 
 									<label for="selectDependencia" class="col-md-1 control-label">Dependência:</label>
@@ -85,6 +90,7 @@ secretariatml>
 									<label for="selectActive" class="col-md-1 control-label">Ativo:</label>
 									<div class="col-md-2">
 										<select name="active" id="active" class="form-control">
+											<option></option>
 											<option>Sim</option>
 											<option>Não</option>
 										</select>
@@ -95,30 +101,30 @@ secretariatml>
 									<label for="dateBegin" class="col-md-1 control-label">Data Inicial:</label>
 									<div class="col-md-2">
 										<div class="input-group date">
-											<input type="date" class="form-control">
 											<span class="input-group-addon">
-												<i class="glyphicon glyphicon-calendar"></i>
+												<span class="glyphicon glyphicon-calendar"></span>
 											</span>
+											<input type="date" class="form-control">
 										</div>
 									</div>
 
 									<label for="dateEnd" class="col-md-1 control-label">Data Final:</label>
 									<div class="col-md-2">
 										<div class="input-group date">
-											<input type="date" class="form-control">
 											<span class="input-group-addon">
-												<i class="glyphicon glyphicon-calendar"></i>
+												<span class="glyphicon glyphicon-calendar"></span>
 											</span>
+											<input type="date" class="form-control">
 										</div>
 									</div>
 
 									<label for="Hora" class="col-md-1 control-label">Hora:</label>
 									<div class="col-md-2">
 										<div class="input-group time">
-											<input type="text" class="form-control" />
 											<span class="input-group-addon">
 												<span class="glyphicon glyphicon-time"></span>
 											</span>
+											<input type="text" class="form-control" />
 										</div>
 									</div>
 								</div>
