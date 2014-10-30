@@ -61,29 +61,31 @@
 
 					<form method="post" action="" class="form-horizontal" role="form">
 						<div class="form-group">
-							<div class="col-md-12">
-								<div class="form-group row">
-									<label for="inputCod" class="col-md-1 control-label">Código Disciplina:</label>
-									<div class="col-md-2">
+							<div class="col-md-8">
+								<div class="form-group">
+									<label for="inputCod" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Código Disciplina:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<input type="text" class="form-control" id="inputCod" disabled required>
 									</div>
+								</div>
 
-									<label for="inputName" class="col-md-1 control-label">Nome:</label>
-									<div class="col-md-3">
+								<div class="form-group">
+									<label for="inputName" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Nome:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<input type="text" class="form-control" id="inputDisciplina" required>
 									</div>
+								</div>
 
-									<label for="inputCH" class="col-md-1 control-label">Carga Horária:</label>
-									<div class="col-md-1">
+								<div class="form-group">
+									<label for="inputCH" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Carga Horária:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<input type="text" class="form-control" id="inputCH" required>
 									</div>
 								</div>
 
-								<div class="clearfix"></div>
-
-								<div class="form-group row">
-									<label for="selectSemestre" class="col-md-1 control-label">Semestre:</label>
-									<div class="col-md-1">
+								<div class="form-group">
+									<label for="selectSemestre" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Semestre:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<select name="selectSerie" id="selectSerie" class="form-control" required>
 											<option value=""></option>
 											<option value="1">1º</option>
@@ -96,18 +98,22 @@
 											<option value="8">8º</option>
 										</select>
 									</div>
+								</div>
 
-									<label for="inputPeriodo" class="col-md-1 control-label">Período Letivo:</label>
-									<div class="col-md-1">
+								<div class="form-group">
+									<label for="inputPeriodo" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Período Letivo:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<select name="periodo" id="selectPeriodo" class="form-control" required>
 											<option value=""></option>
 											<option value="1">1</option>
 											<option value="2">2</option>
 										</select>
 									</div>
+								</div>
 
-									<label for="selectDependencia" class="col-md-1 control-label">Dependência:</label>
-									<div class="col-md-2">
+								<div class="form-group">
+									<label for="selectDependencia" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Dependência:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<select name="selectDependencia" id="selectDependencia" class="form-control" required>
 											<option value=""></option>
 											<option value="rdr">RDR</option>
@@ -119,9 +125,9 @@
 									</div>
 								</div>
 
-								<div class="form-group row">
-									<label for="inputProfessor" class="col-md-1 control-label">Professor:</label>
-									<div class="col-md-3">
+								<div class="form-group">
+									<label for="inputProfessor" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Professor:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<select name="selectProfessor" id="selectProfessor" class="form-control" required>
 											<option></option>
 											<option>Guilherme Costa</option>
@@ -132,8 +138,8 @@
 									</div>
 								</div>
 
-								<div class="col-md-offset-7">
-									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editar-success">Alterar</button>
+								<div class="col-md-offset-6">
+									<button type="button" class="btn btn-success" data-toggle="modal" data-target="#editar-success">Alterar</button>
 										<div class="modal fade" id="editar-success" tabindex="-1" role="dialog" aria-labelledby="editar-success" aria-hidden="true">
 											<div class="modal-dialog modal">
 												<div class="modal-content">
@@ -149,7 +155,7 @@
 												</div>
 											</div>
 										</div>
-									<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-primary">Cancelar</button></a>
+									<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-warning">Cancelar</button></a>
 								</div>
 							</div>
 						</div>

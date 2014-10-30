@@ -90,7 +90,7 @@
 									<td></td>
 									<td></td>
 									<td></td>
-									<td><a href="../secretaria/editarCurso.php" type="button" class="btn btn-warning btn-xs">Editar</a>
+									<td><a href="../secretaria/editarCurso.php" type="button" class="btn btn-warning btn-xs">Editar</a></td>
 								</tr>
 							</tbody>
 						</table>

@@ -61,7 +61,46 @@
 					</div>
 
 					<form method="post" action="" class="form-horizontal" role="form">
-						<div class="form-group">
+						<div class="row">
+							<div class="col-md-8">
+								<div class="form-group">
+									<label for="inputNome" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Nome:</label>
+									<div class="col-xs-6 col-sm-5 col-md-7 col-lg-7">
+										<input type="text" class="form-control" id="inputNome" required>
+									</div>
+								</div>
+						
+								<div class="form-group">
+									<label for="inputOrientador" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Orientador:</label>
+									<div class="col-xs-6 col-sm-5 col-md-7 col-lg-7">
+										<input type="text" class="form-control" id="inputOrientador" required>
+									</div>
+								</div>
+						
+								<div class="form-group">
+									<label for="selectTipo" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Tipo:</label>
+									<div class="col-xs-6 col-sm-5 col-md-7 col-lg-7">
+										<select name="selectTipo" id="selectTipo" class="form-control" required>
+											<option value=""></option>
+										</select>
+									</div>
+								</div>
+						
+								<div class="form-group">
+									<label for="numberCarga" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Carga Horária:</label>
+									<div class="col-xs-6 col-sm-5 col-md-7 col-lg-7">
+										<input type="number" class="form-control" id="inputCarga" required>
+									</div>
+								</div>
+						
+								<div class="col-md-offset-6">
+									<button type="button" class="btn btn-success">Cadastrar</button>
+									<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-warning">Cancelar</button></a>
+								</div>
+							</div>
+						</div>
+
+						<!-- <div class="form-group">
 							<div class="col-md-12">
 								<div class="form-group row">
 									<label for="inputNome" class="col-md-1 control-label">Nome:</label>
@@ -112,7 +151,7 @@
 									<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-primary">Cancelar</button></a>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</form>
 				</div>
 			</div>

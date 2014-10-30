@@ -61,7 +61,89 @@ secretariatml>
 					</div>
 
 					<form method="post" action="" class="form-horizontal" role="form">
-						<div class="form-group">
+						<div class="row">
+							<div class="col-md-8">
+								<div class="form-group">
+									<label for="inputCod" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Código Disciplina:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
+										<input type="text" class="form-control" id="inputCod" required>
+									</div>
+								</div>
+					
+							<div class="form-group">
+								<label for="inputDisciplina" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Disciplina:</label>
+								<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
+									<input type="text" class="form-control" id="inputDisciplina" required>
+								</div>
+							</div>
+					
+							<div class="form-group">
+								<label for="inputCarga" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Carga Horária:</label>
+								<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
+									<input type="text" class="form-control" id="inputCarga" required>
+								</div>
+							</div>
+					
+							<div class="form-group">
+								<label for="inputPeriodo" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Período Letivo:</label>
+								<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
+									<input type="text" class="form-control" id="inputPeriodo" required>
+								</div>
+							</div>
+					
+							<div class="form-group">
+								<label for="selectSerie" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Série:</label>
+								<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
+									<select name="selectSerie" id="selectSerie" class="form-control" required>
+										<option value=""></option>
+										<option value="1">1º</option>
+										<option value="2">2º</option>
+										<option value="3">3º</option>
+										<option value="4">4º</option>
+										<option value="5">5º</option>
+										<option value="6">6º</option>
+										<option value="7">7º</option>
+										<option value="8">8º</option>
+										<option value="9">9º</option>
+									</select>
+								</div>
+							</div>
+					
+							<div class="form-group">
+								<label for="selectDependencia" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Dependência:</label>
+								<div class="col-xs-6-col-sm-10 col-md-11 col-lg-7">
+									<select name="selectDependencia" id="selectDependencia" class="form-control" required>
+										<option value=""></option>
+										<option value="rdr">RDR</option>
+										<option value="str">STR</option>
+										<option value="gtr">GTR</option>
+										<option value="trt">TRT</option>
+										<option value="ster">STER</option>
+									</select>
+								</div>
+							</div>
+					
+							<div class="form-group">
+								<label for="inputProfessor" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Professor:</label>
+								<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
+									<select name="selectProfessor" id="selectProfessor" class="form-control" required>
+										<option></option>
+										<option>Guilherme Costa</option>
+										<option>Fernando Gonçalves</option>
+										<option>Wesley Tschiedel</option>
+										<option>Welton Dias</option>
+									</select>
+								</div>
+							</div>
+					
+							<div class="col-md-offset-6">
+								<button type="button" class="btn btn-success">Cadastrar</button>
+								<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-warning">Cancelar</button></a>
+							</div>
+						</div>
+					</div>
+
+						<!-- <div class="form-group">
 							<div class="col-md-12">
 								<div class="form-group row">
 									<label for="inputName" class="col-md-1 control-label">Nome:</label>
@@ -148,7 +230,7 @@ secretariatml>
 									<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-primary">Cancelar</button></a>
 								</div>
 							</div>
-						</div>
+						</div> -->
 					</form>
 				</div>
 			</div>

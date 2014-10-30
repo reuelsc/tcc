@@ -60,37 +60,43 @@
 					</div>
 
 					<form method="post" action="" class="form-horizontal" role="form">
-						<div class="form-group">
-							<div class="col-md-12">
-								<div class="form-group row">
-									<label for="inputCod" class="col-md-1 control-label">Código Aluno:</label>
-									<div class="col-md-2">
+						<div class="row">
+							<div class="col-md-8">
+								<div class="form-group">
+									<label for="inputCod" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Código Aluno:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<input type="text" class="form-control" id="inputCod" disabled required>
 									</div>
+								</div>
 
-									<label for="inputRa" class="col-md-1 control-label">RA:</label>
-									<div class="col-md-2">
+								<div class="form-group">
+									<label for="inputRa" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">RA:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<input type="text" class="form-control" id="inputRa" required>
 									</div>
+								</div>
 
-									<label for="inputName" class="col-md-1 control-label">Nome:</label>
-									<div class="col-md-5">
+								<div class="form-group">
+									<label for="inputName" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Nome:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<input type="text" class="form-control" id="inputName" required>
 									</div>
 								</div>
 
-								<div class="form-group row">
-									<label for="sexo" class="col-md-1 control-label">Sexo:</label>
-									<div class="col-md-2">
+								<div class="form-group">
+									<label for="sexo" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Sexo:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<select name="sexo" class="form-control">
 											<option value=""></option>
 											<option value="feminino">Feminino</option>
 											<option value="masculino">Masculino</option>
 										</select>
 									</div>
-									
-									<label for="selectCurso" class="col-md-1 control-label">Curso:</label>
-									<div class="col-md-3">
+								</div>
+
+								<div class="form-group">
+									<label for="selectCurso" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Curso:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<select name="selectCurso" id="selectCurso" class="form-control" required>
 											<option value=""></option>
 											<option value="prog-estruturada">Programação Estruturada</option>
@@ -106,9 +112,11 @@
 											<option value="xml">XML</option>
 										</select>
 									</div>
+								</div>
 
-									<label for="selectDependencia" class="col-md-1 control-label">Dependência:</label>
-									<div class="col-md-2">
+								<div class="form-group">
+									<label for="selectDependencia" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Dependência:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<select name="selectDependencia" id="selectDependencia" class="form-control" required>
 											<option value=""></option>
 											<option value="rdr">RDR</option>
@@ -118,9 +126,11 @@
 											<option value="ster">STER</option>
 										</select>
 									</div>
+								</div>
 
-									<label for="selectSemestre" class="col-md-1 control-label">Semestre:</label>
-									<div class="col-md-1">
+								<div class="form-group">
+									<label for="selectSemestre" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Semestre:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<select name="selectSemestre" id="selectSemestre" class="form-control" required>
 											<option value=""></option>
 											<option value="1">1º</option>
@@ -135,27 +145,29 @@
 									</div>
 								</div>
 
-								<div class="form-group row">
-									<label for="inputPhone" class="col-md-1 control-label">Telefone:</label>
-									<div class="col-md-2">
+								<div class="form-group">
+									<label for="inputPhone" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Telefone:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<input type="phone" class="form-control" id="inputPhone" required>
 									</div>
+								</div>
 
-									<label for="inputEmail" class="col-md-1 control-label">Email:</label>
-									<div class="col-md-3">
+								<div class="form-group">
+									<label for="inputEmail" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Email:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<input type="email" class="form-control" id="inputEmail">
 									</div>
 								</div>
 
-								<div class="form-group row">
-									<label for="inputNasc" class="col-md-1 control-label">Nascimento:</label>
-									<div class="col-md-2">
+								<div class="form-group">
+									<label for="inputNasc" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Nascimento:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<input type="date" class="form-control" id="inputNac" required>
 									</div>
 								</div>
 
-								<div class="col-md-offset-7">
-									<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#editar-success">Alterar</button>
+								<div class="col-md-offset-6">
+									<button type="submit" class="btn btn-success" data-toggle="modal" data-target="#editar-success">Alterar</button>
 									<div class="modal fade" id="editar-success" tabindex="-1" role="dialog" aria-labelledby="editar-success" aria-hidden="true">
 										<div class="modal-dialog modal">
 											<div class="modal-content">
@@ -171,7 +183,7 @@
 											</div>
 										</div>
 									</div>
-									<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-primary">Cancelar</button></a>
+									<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-warning">Cancelar</button></a>
 								</div>
 							</div>
 						</div>

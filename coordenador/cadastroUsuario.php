@@ -26,7 +26,7 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<img src="../img/logo.jpg" alt="SAD" width="100" height="50">
+				<a href="#" class="navbar-brand">{Logo}</a>
 			</div>
 
 			<div class="collapse navbar-collapse" id="navbar-collapse">
@@ -62,7 +62,115 @@
 					</div>
 
 					<form method="post" action="" class="form-horizontal" role="form">
-						<div class="form-group">
+						<div class="row">
+						    <div class="col-md-8">
+						        <div class="form-group">
+						            <label for="inputName" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Nome</label>
+						            <div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
+						                <input type="text" class="form-control" name="nome" maxlength="50"  id="inputName" required>
+						            </div>
+						        </div>
+						        <div class="form-group">
+						            <label for="inputsenha" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Senha</label>
+						            <div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
+						                <input type="text" class="form-control" name="senha" maxlength="20"  id="inputSenha" required>
+						            </div>
+						        </div>
+						        <div class="form-group">
+						            <label for="inputsenha" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Confirmar Senha</label>
+						            <div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
+						                <input type="password" class="form-control" name="senha" maxlength="20"  id="inputSenha" required>
+						            </div>
+						        </div>
+
+						        <div class="form-group">
+						            <label for="radioPerfil" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Perfil:</label>
+						            <div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
+						                <label class="btn btn-primary">
+						                    <input type="radio" name="optionPerfil" id="optionProfessor" required="" value="professor"> Professor
+						                </label>
+
+						                <label class="btn btn-primary">
+						                    <input type="radio" name="optionPerfil" id="optionCoordenador" required="" value="coordenador"> Coordenador
+						                </label>
+
+						                <label class="btn btn-primary">
+						                    <input type="radio" name="optionPerfil" id="optionSecretaria" required="" value="secretaria"> Secretária
+						                </label>
+						            </div>
+						        </div>
+
+						        <div class="form-group">
+						            <label for="inputCPF" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">CPF:</label>
+						            <div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
+						                <input type="text" name="cpf" maxlength="14" onkeypress="formatar('###.###.###-##', this)">
+						            </div>
+						        </div>
+
+						        <div class="form-group">
+						            <label for="inputNasc" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Data de Nascimento:</label>
+						            <div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
+						                <input type="date" class="form-control" id="inputNasc" required>
+						            </div>
+						        </div>
+
+						        <div class="form-group">
+						            <label for="inputPhone" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Telefone:</label>
+						            <div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
+						                <input type="text" name="tel" maxlength="12" onkeypress="formatar('##-####-####', this);" />
+						            </div>
+						        </div>
+
+						        <div class="form-group">
+						            <label for="inputEndereco" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Endereço:</label>
+						            <div class="col-xs-6-col-sm-10 col-md-11 col-lg-7">
+						                <input type="text" class="form-control" id="inputEndereco" size="30" maxlength="50" required>
+						            </div>
+						        </div>
+
+						        <div class="form-group">
+						            <label for="inputComplemento" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Complemento:</label>
+						            <div class="col-xs-6-col-sm-10 col-md-11 col-lg-7">
+						                <input type="text" class="form-control" size="30" maxlength="20"  id="inputComplemento">
+						            </div>
+						        </div>
+
+						        <div class="form-group">
+						            <label for="inputCidade" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Cidade:</label>
+						            <div class="col-xs-6-col-sm-10 col-md-11 col-lg-7">
+						                <input type="text" class="form-control" size="30" maxlength="30" id="inputCidade" required>
+						            </div>
+						        </div>
+
+						        <div class="form-group">
+						            <label for="optionEstado" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Estado:</label>
+						            <div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
+						                <select name="selectEstado" id="selectEstado" class="form-control" required>
+						                    <option value=""></option>
+						                    <option value="AC">AC</option>
+						                    <option value="AM">AM</option>
+						                    <option value="AP">AP</option>
+						                    <option value="BA">BA</option>
+						                    <option value="CE">CE</option>
+						                    <option value="ES">ES</option>
+						                    <option value="MA">MA</option>
+						                    <option value="RS">RS</option>
+						                    <option value="DF">DF</option>
+						                    <option value="SP">SP</option>
+						                    <option value=""></option>
+						                    <option value=""></option>
+						                </select>
+						            </div>
+						        </div>
+
+						        <div class="col-md-offset-6">
+						            <button type="submit" class="btn btn-success">Cadastrar</button>
+						            <a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-warning">Cancelar</button></a>
+						        </div>
+						    </div>
+						</div>
+
+						<!-- <div class="form-group">
 							<div class="col-md-12">
 								<div class="form-group row">
 									<label for="inputName" class="col-md-1 control-label">Nome:</label>
@@ -133,27 +241,27 @@
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="col-md-offset-8">
-							<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#user-success">Cadastrar</button>
-							<div class="modal fade" id="user-success" tabindex="-1" role="dialog" aria-labelledby="user-success" aria-hidden="true">
-								<div class="modal-dialog modal">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Sair</span></button>
-										</div>
-										<div class="modal-body">
-											<p>Usuário cadastrado com sucesso!</p>
-										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+							<div class="col-md-offset-8">
+								<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#user-success">Cadastrar</button>
+								<div class="modal fade" id="user-success" tabindex="-1" role="dialog" aria-labelledby="user-success" aria-hidden="true">
+									<div class="modal-dialog modal">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Sair</span></button>
+											</div>
+											<div class="modal-body">
+												<p>Usuário cadastrado com sucesso!</p>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-primary" data-dismiss="modal">Ok</button>
+											</div>
 										</div>
 									</div>
 								</div>
+								<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-primary">Cancelar</button></a>
 							</div>
-							<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-primary">Cancelar</button></a>
-						</div>
+						</div> -->
 					</form>
 				</div>
 			</div>

@@ -91,7 +91,7 @@
 									<td></td>
 									<td>Guilherme Parente Costa</td>
 									<td>Sim</td>
-									<td><a href="../secretaria/editarTurma.php" type="button" class="btn btn-warning btn-xs">Editar</a>
+									<td><a href="../secretaria/editarTurma.php" type="button" class="btn btn-warning btn-xs">Editar</a></td>
 								</tr>
 							</tbody>
 						</table>

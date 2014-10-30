@@ -60,21 +60,25 @@
 					</div>
 
 					<form method="post" action="" class="form-horizontal" role="form">
-						<div class="form-group">
-							<div class="col-md-12">
-								<div class="form-group row">
-									<label for="inputCod" class="col-md-1 control-label">Código Curso:</label>
-									<div class="col-md-2">
+						<div class="row">
+							<div class="col-md-8">
+								<div class="form-group">
+									<label for="inputCod" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Código Curso:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<input type="text" class="form-control" id="inputCod" disabled required>
 									</div>
+								</div>
 
-									<label for="inputNome" class="col-md-1 control-label">Nome:</label>
-									<div class="col-md-3">
+								<div class="form-group">
+									<label for="inputNome" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Nome:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<input type="text" class="form-control" id="inputNome" required>
 									</div>
+								</div>
 
-									<label for="selectTipo" class="col-md-1 control-label">Tipo:</label>
-									<div class="col-md-2">
+								<div class="form-group">
+									<label for="selectTipo" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Tipo:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<select name="selectTipo" id="selectTipo" class="form-control" required>
 											<option value=""></option>
 											<option value="">Presencial</option>
@@ -84,20 +88,22 @@
 									</div>
 								</div>
 
-								<div class="form-group row">
-									<label for="inputOrientador" class="col-md-1 control-label">Orientador:</label>
-									<div class="col-md-3">
+								<div class="form-group">
+									<label for="inputOrientador" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Orientador:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<input type="text" class="form-control" id="inputOrientador" required>
 									</div>
+								</div>
 
-									<label for="numberCH" class="col-md-1 control-label">Carga Horária:</label>
-									<div class="col-md-2">
+								<div class="form-group">
+									<label for="numberCH" class="col-xs-6 col-sm-2 col-md-1 col-lg-2 control-label">Carga Horária:</label>
+									<div class="col-xs-6 col-sm-10 col-md-11 col-lg-7">
 										<input type="number" class="form-control" id="inputCarga" required>
 									</div>
 								</div>
 
-								<div class="col-md-offset-8">
-									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editar-success">Alterar</button>
+								<div class="col-md-offset-6">
+									<button type="button" class="btn btn-success" data-toggle="modal" data-target="#editar-success">Alterar</button>
 										<div class="modal fade" id="editar-success" tabindex="-1" role="dialog" aria-labelledby="editar-success" aria-hidden="true">
 											<div class="modal-dialog modal">
 												<div class="modal-content">
@@ -113,7 +119,7 @@
 												</div>
 											</div>
 										</div>
-									<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-primary">Cancelar</button></a>
+									<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-warning">Cancelar</button></a>
 								</div>
 							</div>
 						</div>

@@ -60,19 +60,23 @@
 					</div>
 
 					<form method="post" action="" class="form-horizontal" role="form">
-						<div class="form-group">
-							<div class="col-md-12">
-								<div class="form-group row">
+						<div class="row">
+							<div class="col-md-8">
+								<div class="form-group">
 									<label for="inputCod" class="col-md-1 control-label">Código Usuário:</label>
 									<div class="col-md-2">
 										<input type="text" class="form-control" id="inputCod" disabled required>
 									</div>
+								</div>
 
+								<div class="form-group">
 									<label for="inputName" class="col-md-1 control-label">Nome:</label>
 									<div class="col-md-5">
 										<input type="text" class="form-control" id="inputName" required>
 									</div>
-									
+								</div>
+
+								<div class="form-group">
 									<label for="selectPerfil" class="col-md-1 control-label">Perfil:</label>
 									<div class="col-md-2">
 										<select name="perfil" class="form-control">
@@ -84,41 +88,49 @@
 									</div>
 								</div>
 
-								<div class="form-group row">
+								<div class="form-group">
 									<label for="inputCPF" class="col-md-1 control-label">CPF:</label>
 									<div class="col-md-3">
 										<input type="text" class="form-control" required>
 									</div>
+								</div>
 
+								<div class="form-group">
 									<label for="inputNasc" class="col-md-1 control-label">Nascimento:</label>
 									<div class="col-md-2">
 										<input type="text" class="form-control" id="inputNasc" required>
 									</div>
+								</div>
 
+								<div class="form-group">
 									<label for="inputPhone" class="col-md-1 control-label">Telefone:</label>
 									<div class="col-md-2">
 										<input type="phone" class="form-control" id="inputPhone" required>
 									</div>
 								</div>
 
-								<div class="form-group row">
+								<div class="form-group">
 									<label for="inputEndereco" class="col-md-1 control-label">Endereço:</label>
 									<div class="col-md-4">
 										<input type="text" class="form-control" id="inputEndereco" required>
 									</div>
+								</div>
 
+								<div class="form-group">
 									<label for="inputComplemento" class="col-md-2 control-label">Complemento:</label>
 									<div class="col-md-3">
 										<input type="text" class="form-control" id="inputComplemento" required>
 									</div>
 								</div>
 
-								<div class="form-group row">
+								<div class="form-group">
 									<label for="inputCidade" class="col-md-1 control-label">Cidade:</label>
 									<div class="col-md-3">
 										<input type="text" class="form-control" id="inputCidade" required>
 									</div>
+								</div>
 
+								<div class="form-group">
 									<label for="optionEstado" class="col-md-1 control-label">Estado:</label>
 									<div class="col-md-1">
 										<select name="selectEstado" id="selectEstado" class="form-control" required>
@@ -138,8 +150,8 @@
 							</div>
 						</div>
 
-						<div class="col-md-offset-8">
-							<button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#editar-success">Alterar</button>
+						<div class="col-md-offset-6">
+							<button type="submit" class="btn btn-success" data-toggle="modal" data-target="#editar-success">Alterar</button>
 							<div class="modal fade" id="editar-success" tabindex="-1" role="dialog" aria-labelledby="editar-success" aria-hidden="true">
 								<div class="modal-dialog modal">
 									<div class="modal-content">
@@ -155,7 +167,7 @@
 									</div>
 								</div>
 							</div>
-							<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-primary">Cancelar</button></a>
+							<a href="javascript:window.history.go(-1)"><button type="button" class="btn btn-warning">Cancelar</button></a>
 						</div>
 					</form>
 				</div>
